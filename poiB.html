@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Points of Interest - Kullaberg</title>
+  <meta name="theme-color" content="#0d47a1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="canonical" href="https://xtreemze.github.io/KullabergApp/index.html" />
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css/master.min.css">
+  <!--
+███████  █████  ██    ██ ██  ██████  ██████  ███    ██
+██      ██   ██ ██    ██ ██ ██      ██    ██ ████   ██
+█████   ███████ ██    ██ ██ ██      ██    ██ ██ ██  ██
+██      ██   ██  ██  ██  ██ ██      ██    ██ ██  ██ ██
+██      ██   ██   ████   ██  ██████  ██████  ██   ████
+-->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png?v=eEEwEaEvl1">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png?v=eEEwEaEvl1">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png?v=eEEwEaEvl1">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png?v=eEEwEaEvl1">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png?v=eEEwEaEvl1">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png?v=eEEwEaEvl1">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png?v=eEEwEaEvl1">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png?v=eEEwEaEvl1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png?v=eEEwEaEvl1">
+  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png?v=eEEwEaEvl1" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon/favicon-194x194.png?v=eEEwEaEvl1" sizes="194x194">
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png?v=eEEwEaEvl1" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicon/android-chrome-192x192.png?v=eEEwEaEvl1" sizes="192x192">
+  <link rel="icon" type="image/png" href="favicon/favicon-16x16.png?v=eEEwEaEvl1" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg?v=eEEwEaEvl1" color="#336699">
+  <link rel="shortcut icon" href="favicon.ico?v=eEEwEaEvl1">
+  <meta name="msapplication-TileColor" content="#336699">
+  <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png?v=eEEwEaEvl1">
+  <meta name="msapplication-config" content="favicon/browserconfig.xml?v=eEEwEaEvl1">
+  <!--
+		███████  ██████ ██████  ██ ██████  ████████
+		██      ██      ██   ██ ██ ██   ██    ██
+		███████ ██      ██████  ██ ██████     ██
+		     ██ ██      ██   ██ ██ ██         ██
+		███████  ██████ ██   ██ ██ ██         ██
+		-->
+  <script src="js/jquery.min.js" charset="utf-8"></script>
+  <script src="js/materialize.min.js" charset="utf-8"></script>
+  <script src="js/master.js"></script>
+</head>
+
+<body class="grey lighten-4">
+  <!--
+██       ██████   █████  ██████  ███████ ██████
+██      ██    ██ ██   ██ ██   ██ ██      ██   ██
+██      ██    ██ ███████ ██   ██ █████   ██████
+██      ██    ██ ██   ██ ██   ██ ██      ██   ██
+███████  ██████  ██   ██ ██████  ███████ ██   ██
+-->
+  <section class="loader valign-wrapper">
+    <div class="centerLoader">
+      <div class="preloader-wrapper big active valign center-align">
+        <div class="spinner-layer spinner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="spinner-layer spinner-red">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="spinner-layer spinner-yellow">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="spinner-layer spinner-green">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--
+███    ██  █████  ██    ██
+████   ██ ██   ██ ██    ██
+██ ██  ██ ███████ ██    ██
+██  ██ ██ ██   ██  ██  ██
+██   ████ ██   ██   ████
+-->
+  <header class="navbar trails z-depth-2">
+    <nav class="blue darken-4" role="navigation">
+      <div class="nav-wrapper"> <a class="brand-logo" id="logo-container"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Kullaberg</span></a>
+        <ul class="right hide-on-med-and-down">
+          <!-- <li><a onclick="showNotification();">Notify</a></li> -->
+          <li> <a href="index.html">News</a> </li>
+          <li> <a href="maps.html" onclick="mapMsg();">Trail Map</a> </li>
+          <li> <a onclick="flashContact();">Contact Us</a> </li>
+        </ul>
+      </div>
+    </nav>
+    <!--
+███████  █████  ██████
+██      ██   ██ ██   ██
+█████   ███████ ██████
+██      ██   ██ ██   ██
+██      ██   ██ ██████
+-->
+    <div class="fixed-action-btn click-to-toggle trails">
+      <a class="btn-floating btn-large red darken-2 bounceIn">
+        <div class="nav-icon4"> <span></span> <span></span> <span></span><span></span> </div>
+      </a>
+      <ul>
+        <!-- <li><a class="btn-floating purple darken-2 tooltipped"
+										data-position="left"
+										data-delay="50"
+										data-tooltip="Notify"
+										onclick="showNotification();"><i class="mdi mdi-vibrate"></i></a></li> -->
+        <li> <a class="btn-floating green darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="News" href="index.html"><i class="mdi mdi-newspaper"></i></a> </li>
+        <li> <a class="btn-floating blue darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Trail Map" href="maps.html" onclick="mapMsg();"><i class="mdi mdi-map"></i></a> </li>
+        <li> <a class="btn-floating yellow darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Contact Us" onclick="flashContact();"><i class="mdi mdi-phone"></i></a> </li>
+      </ul>
+    </div>
+    <!--
+████████  █████  ██████  ███████
+	 ██    ██   ██ ██   ██ ██
+	 ██    ███████ ██████  ███████
+	 ██    ██   ██ ██   ██      ██
+	 ██    ██   ██ ██████  ███████
+-->
+    <div class="tabSpacer trails">
+      <section class="tabs-wrapper">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"> <a href="#trail1" onclick="tabOperation();">Kullaleden</a> </li>
+            <li class="tab col s3"> <a href="#trail2" onclick="tabOperation();">Western Kullaberg</a> </li>
+            <li class="tab col s3"> <a href="#trail3" onclick="tabOperation();">Sights of Heritage</a> </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </header> <br>
+  <!--Scripts-->
+  <!--End Scripts-->
+  <main class="trails row">
+    <!--
+████████ ██████   █████  ██ ██           ██
+   ██    ██   ██ ██   ██ ██ ██          ███
+   ██    ██████  ███████ ██ ██           ██
+   ██    ██   ██ ██   ██ ██ ██           ██
+   ██    ██   ██ ██   ██ ██ ███████      ██
+-->
+    <section id="trail1">
+      <section class="col s12 m12 l8">
+        <div class="card horizontal">
+          <div class="orangeBack card-image sl5"><img src="img/t1/trail1sign.png" alt="Kullaleden"></div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <div class="flow-text">
+                <p>Welcome to the Kullaleden Trail, marked with orange, taking you forward step by step.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--
+██████   ██████  ██
+██   ██ ██    ██ ██
+██████  ██    ██ ██
+██      ██    ██ ██
+██       ██████  ██
+-->
+      <section id="trail1Poi" class="col s12 m12 l12">
+        <ul class="collapsible white" data-collapsible="expandable">
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>About Kullaleden</span>
+            <div class="collapsible-body section row">
+              <p>Kullaleden is section 1-6 of Skåneleden trail no. SL 5 in total 72 kilometers around the Kullahalvön peninsula from Helsingborg city center via Kullaberg Lighthouse to Utvälinge.</p>
+              <p>Kullaleden is certified according to the European Ramblers’ Association’s (ERA) criteria for being a Leading Quality Trail. This entails a quality assurance of the trail’s physical standard as well as the experiences and services along the trail. The certification is renewed every three years.</p>
+              <p><span class="strong">
+																				Gradings</span> <br> <span class="strong">From Mölle to Kullen Lighthouse and back to Arild:</span> <br> Undulating terrain, steep sections on nature trails exist. Moderate to hard (northern side)</p>
+              <p> <span class="strong">Other:</span> <br> Easy-varied terrain with only minor height differences, more than 50% of the stretch runs on nature trails.</p>
+              <p>Kullaleden offers a great variety of experiences along the way. Here you find everything including the medieval city centre of Helsingborg, beautiful views over the straits from the plateau heights, the well-known Sofiero Palace, Kulla-Gunnarstorp and Krapperup Estates, beaches and picturesque seaside villages, and Kullaberg’s dramatic cliff formations.</p>
+              <section class="collection onlineOnly"> <a href="http://kullaleden.se/en" class="collection-item"><i class="mdi mdi-link"></i> Kullaleden.se</a> <a href="http://en.skaneleden.se/the-trail/sl-5-oresundsleden/" class="collection-item"><i class="mdi mdi-link"></i> Skaneleden.se</a> <a href="http://www.era-ewv-ferp.com/frontpage/" class="collection-item"><i class="mdi mdi-link"></i> EURORANDO</a> <a href="http://www.era-ewv-ferp.com/programs/lqt/kullaleden/" class="collection-item"><i class="mdi mdi-link"></i> Kullaleden: Certified Leading Quality Trail</a> <a href="https://www.google.com/maps/streetview/#skane" class="collection-item"><i class="mdi mdi-link"></i> Skåneleden SL5 Street View</a> </section>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>A,N: Our Responsibility</span>
+            <div class="collapsible-body section row"> <img src="img/t1/1.jpg" class="col s12 m12 l12 padBottom" alt="Our Responsibility" />
+              <p>Since prehistoric times, the sea has been a valuable resource. We have over-utilised the sea for a long time. Now we understand that we need to do more to keep the sea healthy. Trends are changing and we are now well on the way, each doing their part. </p>
+              <p>The burden of nutrients entering the sea is decreasing; shipping is becoming cleaner; an increasing number of wetlands are being created and awareness is increasing among people in general.</p>
+              <p class="center-align"> <a class="trail1 poi" href="
+
+								https://www.google.com/maps/dir/Current+Location/56%C2%B017'55.0%22N+12%C2%B028'59.0%22E/@56.2986111,12.4808669,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2986111!4d12.4830556
+
+								"><span class="poi">A:</span><i class="mdi mdi-map-marker medium"></i></a> </p>
+              <p class="center-align"> <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B013'19.0%22N+12%C2%B045'36.0%22E/@56.2219444,12.7578113,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2219444!4d12.76
+								"><span class="poi">N:</span><i class="mdi mdi-map-marker medium"></i></a> </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>B: Rocky Bottoms</span>
+            <div class="collapsible-body section row"> <img src="img/t1/13.jpg" class="col s12 m12 l12 padBottom" alt="Rocky Bottoms" />
+              <p>Many marine species require genuine salt water. In the coastal waters of Skåne we find these creatures only in the northern part of Öresund and in the Kattegatt, above all at Kullaberg. Below the pycnocline boundary out at the Kullaberg rocks, it is dark and cold but abundant in fauna in beautiful colours.</p>
+              <p>Kullaberg is the southernmost outpost of the purely marine species – further south the water is too brackish. At Kullaberg we find coral species – corals are animals not plants.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+								https://www.google.com/maps/dir/Current+Location/56%C2%B017'19.6%22N+12%C2%B032'18.2%22E/@56.2887764,12.5362129,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2887764!4d12.5384016
+
+								"> <span class="poi">B:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>C,L: Sea Plants</span>
+            <div class="collapsible-body section row"> <img src="img/t1/12.jpg" class="col s12 m12 l12 padBottom" alt="Sea Plants" />
+              <p>Plants are crucial to life in the sea. With the help of sunlight, plants transform carbon dioxide into energy-rich plant material, and they create oxygen. There are two different types of plant in the sea: flowering plants, which have roots and grow in soft bottoms, and Kelp which grows on hard bottoms, attaching itself with the help of a holdfast.</p>
+              <p>Large perennial algae such as Bladderwrack and Toothed wrack are important to the ecosystem.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+
+								https://www.google.com/maps/dir/Current+Location/56%C2%B016'33.0%22N+12%C2%B034'20.0%22E/@56.2758333,12.5700335,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2758333!4d12.5722222
+
+								"> <span class="poi">C:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B011'57.0%22N+12%C2%B033'08.0%22E/@56.1991667,12.5500335,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.1991667!4d12.5522222
+								"> <span class="poi">L:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>D,K: Swimmer's Bay</span>
+            <div class="collapsible-body section row"> <img src="img/t1/4.jpg" class="col s12 m12 l12 padBottom" alt="Swimmer's Bay" />
+              <p class="strong">The Swimmers’ Bay</p>
+              <p>The food store and nursery of the sea.</p>
+              <p>Shallow bays are highly productive. A lot of nutrition comes here from land and the spring sun quickly warms the shallow water. On a fine April day, while it is still 5-6 °C out at sea, it can be 10 to 15 °C near the shores. At a depth of 1m, biological production can be 10 times greater than at 10 m deep.</p>
+              <p><span class="strong">April</span> - Brown shrimp and Littoral crab come in from deeper water.</p>
+              <p><span class="strong">May</span> - Hundreds of small juvenile plaice drift in from the spawning grounds out in the Kattegatt.</p>
+              <p> <span class="strong">June</span> - There is a veritable invasion of Blunt gapers, cockles and sea mussels.</p>
+              <p> <span class="strong">July</span> - Newly hatched Brown shrimp and Littoral crab drift in to the bay on the current. </p>
+              <p><span class="strong">Autumn</span> - In the autumn when it becomes cooler in the water, the fish, crabs and shrimp disappear to deeper water.</p>
+              <p><span class="strong">Winter</span> - In winter there is calm in the swimmers’ bay.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+									https://www.google.com/maps/dir/Current+Location/56%C2%B015'41.0%22N+12%C2%B037'15.0%22E/@56.2613889,12.6186446,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2613889!4d12.6208333
+
+								"> <span class="poi">D:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B014'06.0%22N+12%C2%B032'13.0%22E/@56.235,12.5347557,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.235!4d12.5369444
+								"> <span class="poi">K:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>E-F: Skälderviken</span>
+            <div class="collapsible-body section row"> <img src="img/t1/9.jpg" class="col s12 m12 l12 padBottom" alt="Skälderviken" />
+              <p>Skälderviken is a bay on the Kattegatt. The area features genuine salt seawater and, via Öresund, the brackish water of the Baltic Sea. This fact means that the exchange of bottom and surface water is made more difficult, which can lead to a shortage of oxygen (hypoxia) on the seabed. The risk of oxygen shortage increases further when too many nutrients from land flow into the bay.</p>
+              <p>The whole of Skälderviken is an important area for life in the sea. Some areas are protected as nature reserves or are Natura 2000 areas.</p>
+              <p>Skälderviken is a spawning area for herring and is an extremely important breeding area for flatfish such as European plaice and Common dab. Other commercial fish species such as Cod, Lumpsucker and Eel hunt their prey here.</p>
+              <p>In the same way, the Eider and other diving ducks find important nutrition here. The bay is home to both seals and porpoises.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B015'04.0%22N+12%C2%B039'43.0%22E/@56.2511111,12.6597557,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2511111!4d12.6619444
+								"> <span class="poi">E:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B013'51.0%22N+12%C2%B041'16.0%22E/@56.2308333,12.6855891,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2308333!4d12.6877778
+
+								"> <span class="poi">F:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>G: Sea Meets Land</span>
+            <div class="collapsible-body section row"> <img src="img/t1/8.jpg" class="col s12 m12 l12 padBottom" alt="Sea Meets Land" />
+              <p>The coastline is a unique area which is affected by what happens both on land and in the sea. Today this area is hotly discussed due to the rising sea levels.</p>
+              <p>The shores along Skälderviken are varied, from sandy to rocky. Farthest inside the bay there are white sandy beaches, while the opening to Kattegatt comprises rocky shores on both sides. Kullaberg rises in the south, a primary rock of horst offering high, steep shores.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+								https://www.google.com/maps/dir/Current+Location/56%C2%B013'19.0%22N+12%C2%B045'36.0%22E/@56.2219444,12.7578113,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2219444!4d12.76
+								"> <span class="poi">G:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>H-I: Coastal Waters</span>
+            <div class="collapsible-body section row"> <img src="img/t1/6.jpg" class="col s12 m12 l12 padBottom" alt="Coastal Waters" />
+              <p>No two stretches of coastline are identical. We find cliffs, cobblefields, gravel, sand and clay. The properties of water range from somewhat brackish to the east to genuine seawater to the west. We therefore have a greater abundance of species to the west, while the Baltic Sea has a unique mix of saltwater and freshwater species. </p>
+              <p>The form and shape of the landscape create different conditions for animals and plants, both above and below the sea surface. Rock bottoms have their populations and soft bottoms have theirs.</p>
+              <p>We know today that waters along the coasts are of considerable importance to all sea life. No two stretches of coastline are identical. We find cliffs, cobblefields, gravel, sand and clay. The properties of water range from somewhat brackish to the east to genuine seawater to the west. We therefore have a greater abundance of species to the west, while the Baltic Sea has a unique mix of saltwater and freshwater species.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+							https://www.google.com/maps/dir/Current+Location/56%C2%B013'04.0%22N+12%C2%B045'36.0%22E/@56.2177778,12.7578113,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2177778!4d12.76
+								"> <span class="poi">H:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B016'58.0%22N+12%C2%B029'40.0%22E/@56.2827778,12.4922557,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2827778!4d12.4944444
+								"> <span class="poi">I:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>J: The Porpoise</span>
+            <div class="collapsible-body section row"> <img src="img/t1/5.jpg" class="col s12 m12 l12 padBottom" alt="The Porpoise" />
+              <p class="strong">The common porpoise Phocoena phocoena.</p>
+              <p> The only whale to constantly inhabit Swedish waters, the porpoise is endangered and red-listed. However, in Skälderviken and the north of Öresund there is still a good chance of seeing a porpoise. </p>
+              <p class="strong">The Smallest Whale</p>
+              <p>The porpoise grows to approximately 170 cm. The primary way to recognise a porpoise is the low, triangular dorsal fin.</p>
+              <p>An elusive deep diver When necessary, porpoises can dive to a depth of 240 meters.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+								https://www.google.com/maps/dir/Current+Location/56%C2%B014'42.0%22N+12%C2%B031'55.0%22E/@56.2449983,12.5144348,14z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.245!4d12.5319444
+
+								"> <span class="poi">J:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>M: The Harbour Seal</span>
+            <div class="collapsible-body section row"> <img src="img/t1/2.jpg" class="col s12 m12 l12 padBottom" alt="The Harbour Seal" />
+              <p>The Harbour seal is found on the Swedish west coast, as well as in two small colonies in the Baltic Sea, at Måkläppen and in the Kalmarsund Strait. The seals we see in Skälderviken belong to the colony on the skerries at Väderö in Halland. </p>
+              <p>The male grows to about 170 centimetres and weighs about 100 kg, while the female, which is slightly smaller, grows to 160 centimetres, weighing around 80 kg. The colour is speckled grey.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+								https://www.google.com/maps/dir/Current+Location/56%C2%B010'41.0%22N+12%C2%B033'22.0%22E/@56.1780556,12.5539224,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.1780556!4d12.5561111
+
+								"> <span class="poi">M:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <!--
+████████ ██████   █████  ██ ██          ██████
+   ██    ██   ██ ██   ██ ██ ██               ██
+   ██    ██████  ███████ ██ ██           █████
+   ██    ██   ██ ██   ██ ██ ██          ██
+   ██    ██   ██ ██   ██ ██ ███████     ███████
+-->
+    <section id="trail2">
+      <section class="col s12 m12 l8">
+        <div class="card horizontal">
+          <div class="orangeBack card-image sl5"><img src="img/t1/trail1sign.png" alt="Kullaleden"></div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <div class="flow-text">
+                <p>Welcome to Western Kullaberg.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--
+██████   ██████  ██
+██   ██ ██    ██ ██
+██████  ██    ██ ██
+██      ██    ██ ██
+██       ██████  ██
+-->
+      <section id="trail2Poi" class="col s12 m12 l12">
+        <ul class="collapsible white" data-collapsible="expandable">
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Austrian Pine</span>
+            <div class="collapsible-body section row"> <img src="img/t2/1.jpg" class="col s12 m12 l12 padBottom" alt="Austrian Pine" />
+              <p>The path here, down to Akersberget, meanders in a valley between the boulders and rocks. Against the slopes are dense thickets of blackthorn and elder where lots of small birds tend to seek shelter. Everywhere in the valley there is a large adult pine trees with twisted, winding stems and gray cracked bark. The needles in the broad crowns are long and strong. The species of pine that this is the issue of units black pine (Pinus nigra) and implanted on Kullabergs open land and other windy places along the Sound coast in the late 1800s.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Åkersberget</span>
+            <div class="collapsible-body section row"> <img src="img/t2/2.jpg" class="col s12 m12 l12 padBottom" alt="Åkersberget" />
+              <p>We are behind Åkersberget, a noticeably rounded promontory jutting out into the sea, which can be glimpsed to the south behind the bushes. The headland takes its name from a field (= åker) which was once here. It was abandoned and became overgrown, mainly with blackthorn bushes. On the other side of the fence, the bushes have been cleared and a pasture with fine meadow grass and flowers is emerging. Walk down the path to the side through the blackthorn thickets to the viewpoint above the vertical drop. The blackthorn has been sculpted by the wind into low, sweeping forms.</p>
+              <p>Once there, towards the westernmost point one can enjoy one of the best views of the rocky, indented coastal cliffs of Kullaberg. The inland ridges end in jagged promontories, and fragments remain in the water in the form of small inlets or sea stacks. The inlets between the promontories feature boulder beaches, which on Kullaberg are called 'malar' (‘grinders’) since the stones make a characteristic grinding sound as they are rolled against each other by the waves. This also means that the stones are worn round and completely smooth. </p>
+              <p> The bedrock of the Kullaberg consists of gneiss, which has however been split both along and across the main orientation of the ridge. Magma has welled up in the cracks, forming the dark brown and black rocks amphibolite and diabase. When looking out over the coastline, one can easily observe this variation, with stretches of light red gneiss alternating with black-brown amphibolite cliffs. In addition, all the cliffs are black at and just above the waterline. This is due to the dark-coloured black tar lichen (Verrucaria maura). The tops of stones and rocks are often coloured yellow by for example common orange lichen (Xanthoria parietina), which thrives in the nitrogen-rich environment created by bird droppings. The sides of the stones can be coloured grey by Ramalina lichens, which thrive in the salt spray from the sea. </p>
+              <p> The sea also hollowed out caves in the cliffs during the 'Littorina' period 5,000 years ago, when the sea level was roughly 10 m higher than now. Directly below us lies the Lahibia Cave, 6 m deep, which can be reached by climbing down at the signpost at the top of the cliffs to the right. Several smaller caves lie close by. Halfway out towards the lighthouse, behind the black promontory, lies the Silver Cave, which was created by quarrying. In the 16th century, it was thought that the fragments of mica visible in the rock were silver, and attempts were made to extract it until it soon became evident that the assumption was false. </p>
+              <p> Continue walking along the Red Path. Shortly before the transition to pasture, there is another side path leading down to Åkersberget and Åkerslån, a small inlet reaching far into the hillside. Coal was once unloaded in this inlet. It was then carried, often in large pieces, up to the lighthouse along the road which is now a path – truly exhausting work. Scuba divers can start from the inlet and follow a series of markers on the underwater drop-off, showing very clearly the development of the typical bands of organisms at different sea depths.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Oak Woods</span>
+            <div class="collapsible-body section row"> <img src="img/t2/3.jpg" class="col s12 m12 l12 padBottom" alt="Oak Woods" />
+              <p>We are now on what was previously a large grazed heathland in the westernmost part of Kullaberg near Igla Bog. Until the 1960s, the area was the site of a planted forest of Austrian pine, which was blown down by a series of severe storms. It was then re-planted with oak, because this species can be considered native to north-western Skåne. (See more information under section 9).</p>
+              <p>The oaks are to some degree mixed with birch, which sets itself naturally on this type of land. However, the planted area will not be allowed to develop into a forest: in the future it will constitute part of the pasture land now established at Western Kullaberg. Livestock are allowed to enter the woodlands to graze, and it will be thinned out in stages. The result will be an open pasture with occasional oak trees, a type of landscape which was probably common on the mountain before the large-scale felling that took place in the centuries following the 16th century. </p>
+              <p> Walking through the woods to the north, one arrives at Igla Bog, a stretch of wetland, surrounded by sallow and willow, with tall-growing species of sedge and wetland plants.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Hagetorn Hill</span>
+            <div class="collapsible-body section row"> <img src="img/t2/4.jpg" class="col s12 m12 l12 padBottom" alt="Hagetorn Hill" />
+              <p>Until the 1980s, a tall, dense forest of Austrian pine grew here, with only the highest tops and a few clearings closer to the sea being left open. Maps from earlier centuries show however that the high plateau used to be a large open heathland with occasional juniper bushes, used for rough grazing. In the latter 19th century, Austrian pine was planted here, and in the 20th century it gradually formed a forest. </p>
+              <p> Inventories of the ground vegetation in the pine forest carried out in the 1970s showed that many species from the previous pastoral landscape survived in clearings and between the trees, which despite their large crowns still allowed some light to reach the ground. The idea arose to fell the pine forest and bring in grazing animals to restore the ancient heath. The plan was not realised until all the forest blew down in a series of severe storms in the 1980s. The windthrow was cleared and sheep were introduced. Later, the addition of Highland cattle proved more effective as regards promoting low-growing vegetation. </p>
+              <p> Today, the heath has been restored, and during your hike across the open spaces you can look out over the entire outer peninsula. The plant species of the former moorland are spreading in the dense grassy vegetation that was established when the trees disappeared. Initially, it was above all wavy hair-grass which took over, but other species on the increase now include heath bedstraw, tormentil, harebell, lesser stitchwort, bilberry and common heather, all species which thrived in the days when it was grazing land (Deschampsia flexuosa, Galium saxatile, Potentilla erecta, Campanula rotundifolia, Stellaria graminea, Vaccinium myrtillus, Calluna vulgaris). </p>
+              <p> Opening up the moorland also exposed to view the centrally located hill called 'Stora Hagetornsbacke'. Its summit is occupied by a large glacial boulder deposited there during the last ice age. Around 1850, it was given the name 'Kung Döses sten' (King Dolmen’s stone) and it became a sightseeing destination for tourists of the period.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Kulla Bog</span>
+            <div class="collapsible-body section row"> <img src="img/t2/5.jpg" class="col s12 m12 l12 padBottom" alt="Kulla Bog" />
+              <p>Below the hill in a ravine lies Kulla Bog, or as it is traditionally called, Grällinge Mad (Grällinge Water Meadow). In fact it is neither a bog nor a water meadow - it is a lake of open water surrounded by a narrow strip of marsh, featuring wetland vegetation. Out in the water there are small patches of grey club-rushes and common cat-tail reeds (Schoenoplectus tabernamontani, Typha angustifolia).</p>
+              <p>In the mat of sphagnum moss and common haircap moss (Sphagnum spp, Polytrichum commune) and along the shore you can find various sedge species, as well as cottongrass, marsh cinquefoil, round-leaved sundew and marsh violet (Carex spp, Eriophorum angustifolium, Potentilla palustris, Drosera rotundifolia, Viola palustris).</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Birch Woods</span>
+            <div class="collapsible-body section row"> <img src="img/t2/6.jpg" class="col s12 m12 l12 padBottom" alt="Birch Woods" />
+              <p>The birch is a pioneer tree, which by spreading its seeds migrates into all open land, often abandoned cultivated land, whether pasture or arable land or previously wooded. The small trees grow densely and form thickets. If left alone, these will thin themselves out and grow into birch woods. The birch as a species however is short-lived, averaging 75 to 100 years. This situation is exploited by the longer living tree species such as oak, beech, ash and elm, which gradually replace the birch and eventually dominate the climax forest vegetation.</p>
+              <p>On the old heathlands, the intensity of grazing varied from year to year. When the grazing pressure was low, birch could sometimes re-invade. In many cases, the birch was not all felled when grazing restarted, rather it was just thinned out and animals were let into the area. This gave rise to the wooded pastures with birch trees that were so typical of the ancient Swedish countryside. The advantages of retaining some birch trees on the land lay in improved water management, whereby the trees drained the ground at the same time as providing some shade to protect it from drying out in sunny weather. </p>
+              <p> In the western part of Kullaberg, grazing of the large open areas of moorland ceased at the end of the 19th century. Trees were planted in most fields, but certain areas were simply left. Where the soil was thin, heather-clad moor remained, sometimes with increasingly dense stands of juniper, while birch invaded on the better land. These areas have mostly been developed into birch woods through clearing and thinning. One such area can be seen to the left of the path. On the other side, a slope leading down to Kulla Bog has been thinned and enclosed. Animals from the pasture to the west have been allowed in there, and thus a wooded pasture with birch trees is being developed – a semi-natural environment which has not been very common on Kullaberg. </p>
+              <p> The birches have now reached the end of their life-span, and they will gradually be replaced by oak, which is the natural climax forest species here. This will take place through a natural process or by planting oaks in certain areas.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Juniper Thickets</span>
+            <div class="collapsible-body section row"> <img src="img/t2/7.jpg" class="col s12 m12 l12 padBottom" alt="Juniper Thickets" />
+              <p>Juniper bushes (Juniperus communis) stand like high walls on either side of the path. Such tall, dense juniper thickets can be found in several places on Kullaberg, often developing on the tops of hills, where the soil was thin and which the livestock had avoided when it was grazing land. Nor were these places of interest for planting trees when grazing ceased. The result was that the juniper bushes gradually merged into tall, dense brush.</p>
+              <p>Because of the poor soil conditions, no other native tree species were able to colonise this land. The juniper bushes took over completely, except on some flat rocky areas practically free from soil, where small clearings can be found. It is only in these clearings that the heather, grass and herbaceous plants from the old heaths have survived. Nearly all ground vegetation dies off underneath juniper bushes. A mat of brown needles is usually all one sees, but one can find patches of low-growing moss, and sometimes the long striped leaves of wavy hair-grass. </p>
+              <p> Small migratory birds used these extremely dense thickets for shelter. The more permanent inhabitants which stay to breed in the juniper thickets include red-backed shrike, common whitethroat, lesser whitethroat and linnet (Lanius collurio, Sylvia communis, Sylvia curruca, Acanthis cannabina). </p>
+              <p> The juniper thickets otherwise feature very few species. It is difficult to open up these areas by thinning. If you take out some bushes from the stand, the result is that you have a lot of bare trunks and brown lower branches, with greenery remaining only on the tops, somewhat as we see along the path here. If you want to restore the grazing land, you have to cut down or burn off the entire stands. Fires have occurred naturally here, but it has turned out that it then takes a long time for the plant species of the previous pasture land to recolonise. Even juniper bushes find it difficult to return, in fact.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Kullagården</span>
+            <div class="collapsible-body section row"> <img src="img/t2/8.jpg" class="col s12 m12 l12 padBottom" alt="Kullagården" />
+              <p>What a panorama from this place! It shows all the most important features of the historical cultivation patterns which have created today’s landscape. The place where we are standing is a relic of the old heathland with junipers, with open views over the heather moors and rough grassland westward towards the lighthouse.</p>
+              <p>If we look out over this landscape, we see large green fields extending over the hills from Öresund in the South to Skälderviken to the North. On the edge of the forest opposite stands the little farm of Kullagården, which for centuries has been the centre of tillage farming in the western part of Kullaberg. The green fields, nowadays a golf course, used to belong to the farm and were called 'calf meadows'. The golf course has actually meant the preservation of the open character of the landscape. In the middle of the 18th century, the beech woods behind the farm were much more open, and pigs were probably left to forage here for beech-nuts. There were smaller enclosed fields for tillage or for hay to be saved for animal feed in the winter. The trees have since closed in to form a continuous beech wood, which gives way to oak woods near the sea. Farthest away, we glimpse the contours of Norra Ljungås, one of the reserve's highest points. A few centuries ago, an imposing grazed heathland began here and extended over all the high ground to the east, as far as the clumps of beech woods surrounding Björkeröd, Himmelstorp and Haga in distant Arild. Pine forest was planted in these open areas in the latter part of the 19th century. It was not until recent years that the forest around Norra Ljungås was felled to make room for the pastures which are now being restored. </p>
+              <p> Kullagården – itself a piece of history </p>
+              <p> In the Middle Ages this area was part of the kingdom of Denmark. Owing to the need to keep the lantern lit in the lighthouse out on the end of the peninsula, from 1564 onwards the farm was leased rent-free in return for tending the lantern, and was called Lyktegården (the Lantern Farm). In the same period, a scheme was proposed to extract silver from the cliffs (see Section 2); a forge was to be built at the farm and a metal-worker was to be housed at the farmhouse. However, this plan soon had to be abandoned, although the leaseholder’s responsibility for the lighthouse continued right into the 18th century. The famous Swedish naturalist Linnaeus visited Kullagården on his travels in Skåne in 1749 and gave a highly favourable account of the farm. Around 1800, the farm was divided into two and 'New Kullagården' on the west side came into existence. The division lasted just a few years, after which the reunited farm was worked by Gustaf Elfversson. Together with his wife he began to receive tourists on the farm, creating walking routes on the hills and successfully marketing the area's attractions with the help of the photographer Peter Lundh. Owing to financial difficulties, he had to hand over the farming to Krapperup in 1872, but he and his wife remained living there and continued to develop tourism in the area. New Kullagården also became a hotel and inn, a business that survives to this day in the form of a combined inn and clubhouse. By the year 1900, Mölle and Kullaberg were among the major tourist destinations in Europe, attracting above all visitors from Germany. Both Elfversson and his successor as leaseholder of Kullagården established and ran some of the biggest hotel facilities in the region: Hotell Elfversson (now Bella Vista), Grand Hotel in Mölle and Rusthållaregården in Arild. </p>
+              <p> In 1914, Kullagården was acquired by Kullabergs Natur, a limited company linked to Lund University. The area thereby came to be managed as one of the first nature reserves in Sweden. It was formally designated a nature reserve in 1971 and was purchased by the Swedish Environmental Protection Agency for the Swedish state in 1997.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Oak Shrub</span>
+            <div class="collapsible-body section row"> <img src="img/t2/9.jpg" class="col s12 m12 l12 padBottom" alt="Rocky Bottoms" />
+              <p>Kullaberg is part of a swathe of species-poor oak woods running across Jutland in Denmark to Sweden’s west coast, northern Skåne, Blekinge and the Baltic coast of Götaland. The oak (Quercus robur, Q. petraea) is the native tree which is naturally most at home on Kullaberg. It occurs on the steep slopes in a special type of forest called 'oak scrub'. The most typical oak scrub is found on the south-facing slopes between here and Mölle, but they also appear on the northern slopes of Kullaberg, often in combination with other tree species. Here there is also an element of ash on the wetter ground.</p>
+              <p>The trees are low-growing, the trunks often twisted and the tree-tops stunted and shaped by the sea winds. Honeysuckle, common ivy and blackberry (Lonicera periclymenum, Hedera helix, Rubus fruticosus) thrive in the understorey, and on the ground the vegetation is mostly rich in herbaceous species thanks to the generous amount of light the trees let through. Plants preferring plenty of light include greater stitchwort and wood meadow-grass (Stellaria holostea, Poa nemoralis). Other grasses present include wood melick, bearded couch-grass, and false brome (Melica uniflora, Elymus caninus, Brachypodium sylvaticum), while colour is provided by herbaceous plants such as yellow archangel, bitter vetch, dog’s mercury, solomon’s-seal, wood sanicle and various violets (Lamiastrum galobdolon, Lathyrus linifolius, Mercurialis perennis, Polygonatum multiflorum, Sanicula europaea, Viola spp). Around the open edges of the woods, orchids bloom in early summer, above all the early purple orchid (Orchis mascula). </p>
+              <p> The oak scrub on south facing slopes also hosts a large number of insects. Many of the insect species have their main distribution farther south and are rare in the rest of Sweden. Among the spiders here we find the purseweb spider (Atypus affinis), which ambushes its prey rather than trapping it in its web. </p>
+              <p> The most interesting fact about this oak scrub is that it has probably existed on these slopes ever since they were first colonised by trees. One can assume that neither humans nor animals were able to reach the young plants out on the steep slopes, and left them untouched. Investigations of the micro-life in the soil beneath the trees also show a species composition which indicates that the habitat has existed for a very long time. Thus, there is good reason to believe that parts of these oak woods are 'virgin forest', something extremely rare today and in Skåne perhaps found only here and on the slopes of the Söderåsen ravines.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Ransvik</span>
+            <div class="collapsible-body section row"> <img src="img/t2/10.jpg" class="col s12 m12 l12 padBottom" alt="Ransvik" />
+              <p>From the golf course down towards Ransvik, a shallow ravine runs, with Ransvik stream running along it. The stream carries a limited flow of water, but it is enough to sustain an interesting insect fauna. The moist ground on the slopes leading down to the stream is rich in nutrients and covered by a green mat of ramsons (Allium ursinum), whose white blooms appear in late spring. The ravine was previously shaded by large elm trees, but practically all of these died of Dutch elm disease. </p>
+              <p>They are being replaced by ash trees, which will probably take over in time, together with a number of old oaks. On a previously open field between the ravine and the road down to Ransvik, another stand of ash has developed into a wood. Down on the shore lies Ransvik, formerly a harbour where coal for the lighthouse was unloaded, and today the site of a bathing place and a restaurant. It was here that 'sinful' bathing flourished during the tourist era around 1900: women and men bathed together, something which had not been accepted formerly and which attracted large numbers of visitors.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Beech Woods</span>
+            <div class="collapsible-body section row"> <img src="img/t2/11.jpg" class="col s12 m12 l12 padBottom" alt="Beech woods" />
+              <p>Up on top of the ridge, the oak woods of the steep slopes give way to beech woods. The beech trees, their trunks like the columns of a cathedral, create an impressive space under their canopies, in spring bathed in delicate, light greenery, in summer dark green and in autumn flaming yellow. In a way, the beech woods have become the characteristic vegetation both of Kullaberg and Skåne as a whole. Here above Ransvik, the ground is covered with wood anemone in spring, while in summer, other flowers such as wood melick, wood meadow-grass, wood stitchwort, woodruff, early dog-violet and yellow archangel take over (Anemone nemorosa, Melica uniflora, Poa nemoralis, Stellaria nemorum, Galium odoratum, Viola reichenbachiana, Lamiastrum galeobdolon).</p>
+              <p>This type of beech wood, rich in herbaceous species, gives way on nutrient-poor land to so-called 'upland beech woods', where the ground covering in the summer is mostly brown leaves with patches of grass (most commonly wavy hair-grass). Such nutrient-poor beech woods can be seen further along the path closer to Josefinelust on the hills above the car park. </p>
+              <p> It is interesting to note that there are many indications that the beech woods of both Kullaberg and Skåne as a whole are the result of farming practices. In previous centuries, the beech was favoured over other tree species because of the beech-nut's importance for foraging pigs. In tax assessments, a beech wood was valued in terms of the numbers of pigs it would support, thus 'a 20 pig beech wood'. The beech woods between Ransvik and Josefinelust is marked on 18th-century maps as an open woodland, probably used for foraging and hay-making. Certain open areas were even used as fields. There are low stone walls in hollows which may have been built as shelter for the pigs. </p>
+              <p> Something else which indicates that the beech was specially favoured is the fact that when today’s beech trees die and fall, they are seldom spontaneously replaced by beech, it is other tree species which fill the gaps. Especially in damp places, there is a tendency for ash to take over as beech disappears. The presence of oak would also be natural in view of the geographical location. </p>
+              <p> Farther ahead there is a side path bearing the sign 'Kullamannens grav' (Grave of the Kulla Man), which leads up to a high point in amongst the trees. If you walk up there, you will find some stones which were given this name during the tourist era around 1900 and which became an attraction for the hikers of that period in the same way as 'Kung Döse (King Dolmen)' (see Section 4).</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Hjorthagen</span>
+            <div class="collapsible-body section row"> <img src="img/t2/12.jpg" class="col s12 m12 l12 padBottom" alt="Hjorthagen" />
+              <p>We have now arrived at the big 'Lighthouse Road'. Just to the east, where the woods end, there is open grassland. This site was previously (1936-2005) an enclosure for red deer, the provincial emblem of Skåne. The old house opposite on the other side of the road was originally a croft, and in the 20th century was named the Deer Cottage. Along a road skirting the edge of the grassland, there is another row of houses called Kullahusen (The Kulla Houses). Some of them were originally the cottages of labourers at Kullagården farm, but a number of holiday cottages have been added.</p>
+              <p>Below the large 'Lighthouse Road' on the way to Mölle, right where it curves, there is a small lake surrounded by wetlands between low hills. Studies of the sediment and peat layers here indicate that this place may have been the first in Scandinavia to emerge from the melting ice 17,000 years ago. The sea level was much higher at that time because the weight of the ice cap pressed the land masses down. </p>
+              <p> In the other direction along the big road, the 'Yellow Trail' curves in towards a large clearing where there is a car park. Most tourists coming to West Kullaberg today carry straight on towards the lighthouse at the outermost point. In the mid-19th century, when tourism on Kullaberg was in its infancy, this was the most important assembly point. The farmer at Kullagården, Gustaf Elfversson, who rented out farm accommodation to tourists, prepared the place and built a path northwards along Möllebäcken Hill, which continued by means of steps down the cliffs to Möllebäcksmal. Up on the edge he built a number of viewpoints. He was particular about orderliness and it is said that he raked the path every Saturday. After a visit by Queen Josefine, the consort of King Oscar I, Elfversson christened the area Josefinelust. To this day there are many visitors who stop here for their first glimpse of the cliffs, rocks and caves of the northern shoreline. </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Josefinelust</span>
+            <div class="collapsible-body section row"> <img src="img/t2/13.jpg" class="col s12 m12 l12 padBottom" alt="Josefinelust" />
+              <p>Another characteristic section of the craggy Kullaberg coastline with its promontories, boulder beaches and caves, this area is easily accessible through a ravine which gently slopes down towards the sea. Along a small stream at the bottom of the ravine there is a path with steps constructed in the mid-19th century.</p>
+              <p>At the top there is extremely sparse herbaceous vegetation in the oak scrub to the east and the beech woods to the west. In the valley by the stream we find tall vegetation with many species of grass and wildflowers, such as tufted hair-grass, reed canary grass, meadowsweet, wild angelica, purple-loosestrife, water avens, red campion and ground-ivy, and also the ferns male-fern and lady-fern. (Deschampsia cespitosa, Phalaris arundinacea, Filipendula ulmaria, Angelica sylvestris, Lythrum salicaria, Geum rivale, Melandrium rubrum, Glechoma hederacea; Dryopteris filix-mas, Athyrium filix-femina). </p>
+              <p> The gneiss bedrock is criss-crossed by seams of amphibolite and diabase. Down on the shore line, one can find a brown diabase called 'kullaite', which only occurs on Kullaberg. </p>
+              <p> The eastern cliff features an easily accessible and much visited cave, 'Josefinelustgrottan', which has formed in a rock crevice and is about 5 m deep. At the top of the steps behind the cliff we find a smaller cave, 'Lilla Josefinelustgrottan', formed in a seam of kullaite and whose entrance is only 1 m high. Both in this cave and in a third cave slightly west of Josefinelust, King Fredrik VII’s cave, traces have been found of hearths, soot and charcoal, as well as of bone implements and worked flint. This shows that the caves were used as early as the Stone Age, although not as dwelling places. Bone remains show that the inhabitants fished for cod, haddock, spiny dogfish, plaice and eel. They also collected sea mussels and whelks. The remains found also included the bones of whales, porpoises and seagulls.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Cliff-top Woods</span>
+            <div class="collapsible-body section row"> <img src="img/t2/14.jpg" class="col s12 m12 l12 padBottom" alt="Cliff-top Woods" />
+              <p>The trail here passes above a wooded part of the northern cliffs. The land here contains a broad seam of greenstone. The greenstone mineral is called amphibolite and weathers easily, releasing plant nutrients. The vegetation becomes rich in herbaceous species. The ground is covered by ramsons and nearby one can find dog’s mercury, Suffolk lungwort, yellow archangel and wood stitchwort, and in spring wood anemone, liverleaf, spring pea and the large red-violet bird-in-a-bush. (Allium ursinum, Mercurialis perennis, Pulmonaria obscura, Lamiastrum galeobdolon, Stellaria nemorum; Anemone nemorosa, Anemone hepatica, Lathyrus vernus, Corydalis cava).</p>
+              <p>The woods here contain a large assortment of deciduous trees: oak, elm, ash, maple and lime, as well as the occasional beech. This kind of mixed woodland on steep ground, often in ravines with fallen boulders, can be found in many parts of Europe and is considered especially valuable in the EU network of protected areas, Natura 2000. On the northern slopes of Kullaberg, this forest type is strongly affected by the wind. As it creeps down the slope, a dense, low-growing thicket develops, with a good few lime trees. It is easy to find this thicket by taking the path down to Käringmalen, which begins here. It is fairly steep, but there are steps. It is worth the effort, because once down at Käringmalen, you are on a beautiful sheltered boulder beach, surrounded by the jagged black amphibolite cliffs, which also form promontories and stacks out in the sea. Käringmalen (The Old Woman's Rocks) is named after a black woman who was abandoned on this desolate shore when a sea captain who had taken her on his ship grew tired of her. She was eventually rescued by local people.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Ablahamn</span>
+            <div class="collapsible-body section row"> <img src="img/t2/15.jpg" class="col s12 m12 l12 padBottom" alt="Ablahamn" />
+              <p>An open valley with good soil formed from the underlying amphibolite rocks leads down to a broad stretch of the shoreline called Ablahamn. This shore is easily accessible and the path links the traditionally used boat mooring with Nya Kullagården farm above here. The farm now serves as an inn and clubhouse. The cultivated land around the farm formerly extended right down to the boulder beach in the form of a sloping marshy meadow.</p>
+              <p>The meadow has not been farmed for a long time, but some plant species from that period remain: meadowsweet, reed canary-grass, wild angelica, water avens, yellow loosestrife among others (Filipendula ulmaria, Phalaris arundinacea, Angelica sylvestris, Geum rivale, Lysimachia vulgaris). Some plants such as cleavers and nettles (Galium aparine, Urtica dioica) indicate the effects of fertilisation. The area is becoming overgrown with ash, alder and sallow. </p>
+              <p> Along the edges of the species-rich oak woods which run eastwards across the valley, and along the path leading up to the farm, there are abundant stands of perennial honesty (Lunaria redivida). Their violet-blue flowers put on a dazzling display in the early summer greenery, while the decorative seedpods, like flattened translucent pea-pods, decorate the undergrowth in both autumn and winter. The species is uncommon in Sweden but is at home in slightly damp, nutrient-rich deciduous forests farther south in central Europe. In recent years the species has also spread to other valleys on Kullaberg, including the descent towards Mölle on the 'Italian road'. </p>
+              <p> The verdant valley with its babbling brook descending towards Ablahamn may be one of the earliest inhabited places in the region. Excavations have revealed several archaeological layers with the remains of dwellings from the late Stone Age (c. 5,000 years ago). Unusually, local stones were used for making tools instead of flint. Finds include 'funnel beakers', round clay vessels with a funnel shaped neck such as are still made in East Africa today.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Visitgrottan</span>
+            <div class="collapsible-body section row"> <img src="img/t2/16.jpg" class="col s12 m12 l12 padBottom" alt="Visitgrottan" />
+              <p>In places, Kullaberg’s northern cliffs drop sheer into the sea. The height here is around 50 m, but further east it's more than 100 m. Open areas with rocks and areas of moorland alternate with thicket and invading brush. This moorland habitat is different from the south facing slopes and hosts species which thrive in a cool damp 'Atlantic' climate: heather, bilberry, black crowberry, dwarf cornel and various ferns (Calluna vulgaris, Vaccinium myrtillus, Empetrum nigrum, Cornus suecica, Dryopteris dilatata, Dryopteris filix-mas). </p>
+              <p> In both cases – be careful – do not go too near the edge. The cliffs are very dangerous!</p>
+              <p>Occasional lime trees and oaks give way to an invasion of tall brush comprising aspen, sallow, rowan, blackthorn, rosehip, elder, guelder-rose etc (Populus tremula, Salix caprea, Sorbus aucuparia, Prunus spinosa, Rosa spp., Sambucus nigra, Viburnum opulus). </p>
+              <p> There is often an uninterrupted view of the sea and after storms and strong winds seabirds appear from far out in the Atlantic: gannet, fulmar, kittiwake and Manx shearwater (Sula bassana, Fulmarus glacialis, Rissa tridactyla, Puffinus puffinus). Other specialised seabirds found here include razorbill, common guillemot and black guillemot (Alca torda, Uria aalge, Cepphus grylle), which nest on the skerries below the cliff. Further east, on a ledge on the high cliffs, the peregrine falcon (Falco peregrinus) also nests - a spectacular bird of prey which has returned to Kullaberg after many years’ absence. </p>
+              <p> Right beneath us lies one of the bigger caves in the cliffs, Visitgrottan, almost 10 m deep, just as wide, and with a ceiling height of 6 m. You can get down to the cave by a fairly steep path near the signpost. It is not always possible to reach the cave, as the access is cut off at high tide. The name of the cave comes from the early 20th century when tourists left their visiting cards in the cracks in the walls. </p>
+              <p> Much of the upper areas of the north facing slopes have become overgrown by bushes and trees. The path continues some way up in the trees and the cliffs are not so visible. You can get down to them by walking past the tables and chairs at the far end of the car park and taking any of the small paths out towards the cliffs. Note the windswept birches, similar to those found in Sweden’s upland regions. Another way to see the cliffs is to walk on from the next information board along the eastern edge of 'Kullalå' out to the edge.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Kullalå</span>
+            <div class="collapsible-body section row"> <img src="img/t2/17.jpg" class="col s12 m12 l12 padBottom" alt="Kullalå" />
+              <p>This is one of the deepest and steepest ravines leading from Kullaberg to the sea. At the bottom, there is a small rocky area and a marshy meadow which is mostly in the shade. The sea inlet is called 'Kullalå' and despite the cliffs all around it has been used as a landing place for boats. In a description from 1825 it says that 'the Devil’s Ravine is an abyss with vertical walls, in which the sea, frothing and green, storms in'. </p>
+              <p> During the tourist boom around 1900, Danish tourists christened the cliff opposite this place 'Palnatokes skränt (Palnatoke’s Cliff)'. </p>
+              <p> Legend has it that Harald Bluetooth, son of the Danish king Gorm, travelled to Kullaberg together with Palnatoke, the chieftain of the island of Fyn, in order to go skiing. Palnatoke considered himself a better skier than King Harald, who angri storms in'. </p>
+              <p> During the tourist boom around 1900, Danish tourists christened the cliff opposite this place 'Palnatokes skränt (Palnatoke’s Cliff)'. </p>
+              <p> Legend has it that Harald Bluetooth, son of the Danish king Gorm, travelled to Kullaberg together with Palnatoke, the chieftain of the island of Fyn, in order to go skiing. Palnatoke considered himself a better skier than King Harald, who angrily forced Palnatoke to ski down the most dangerous of the cliffs. After what was practically a free fall, Palnatoke landed at the bottom of the cliff - in one piece! (The legend features in A. Oehlenschläger’s tragedy 'Palnatoke').</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <!--
+████████ ██████   █████  ██ ██          ██████
+   ██    ██   ██ ██   ██ ██ ██               ██
+   ██    ██████  ███████ ██ ██           █████
+   ██    ██   ██ ██   ██ ██ ██               ██
+   ██    ██   ██ ██   ██ ██ ███████     ██████
+-->
+    <section id="trail3">
+      <div class="row">
+        <section class="col s12 m12 l8">
+          <div class="card horizontal">
+            <div class="orangeBack card-image sl5 "><img src="img/t1/trail1sign.png" alt="Kullaleden"></div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <div class="flow-text">
+                  <p>Welcome to the Sights of Heritage, marvels of Swedish culture and history with a rich and colorful past.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="col s12 l4">
+          <div class="btn-large orange darken-2 center-align col s12 card"> <a href="https://www.google.com/maps/dir/Current+Location/Kärnan/Sofiero/Hittarp,+Sweden/Kulla+Gunnarstorpsvägen+185/Domsten,+Sweden/Viken,+Sweden/Höganäs,+Sweden/Mölle,+Sweden/SOLVIKEN+1NA,+260+42+Mölle,+Sweden/RANSVIK+1NA,+260+42+Mölle,+Sweden/Arild,+Sweden/KLÖTETS+BADPLATS+1NA/Skäret,+Sweden/Rekekroken,+Sweden/@56.1696272,12.4485589,11z/data=!3m1!4b1!4m92!4m91!1m5!1m1!1s0x4652323605cb7b71:0xf14aa52ac4a88c9f!2m2!1d12.6974978!2d56.0483045!1m5!1m1!1s0x465231e4cd906d1f:0x2a6a3d15a0a05e3c!2m2!1d12.6596794!2d56.0839149!1m5!1m1!1s0x46522e27b3ce05b3:0xa01907aa3403ae0!2m2!1d12.6384939!2d56.0959585!1m5!1m1!1s0x46522e33a9b7e2ff:0x76bb7730163d0ac5!2m2!1d12.629543!2d56.1092063!1m5!1m1!1s0x46522fb8b6177477:0x9c136dbc8d71be0d!2m2!1d12.6062923!2d56.1190799!1m5!1m1!1s0x46522580aff6eebf:0xc8fce81a62f8248a!2m2!1d12.5804235!2d56.1459215!1m5!1m1!1s0x46518a7f85359427:0x4019078290e7aa0!2m2!1d12.5553288!2d56.2006388!1m5!1m1!1s0x465220ac09ce1585:0xa01907aa3403c30!2m2!1d12.5021241!2d56.2821904!1m5!1m1!1s0x465220a70a7843b7:0xac988e4ab19c1c5e!2m2!1d12.4852812!2d56.2893643!1m5!1m1!1s0x465220a071dbad17:0x4b5ec7135810f218!2m2!1d12.4762033!2d56.2912475!1m5!1m1!1s0x4652277892343af5:0x34474d479e2d4217!2m2!1d12.5783573!2d56.2708361!1m5!1m1!1s0x465227845422b205:0x494b44e0e587cc6f!2m2!1d12.5798234!2d56.2730383!1m5!1m1!1s0x465227ed46f63319:0xd187b053d09d9729!2m2!1d12.6163859!2d56.2603355!1m5!1m1!1s0x4652285a10b46b51:0x5ba8dc34f750cdec!2m2!1d12.6716447!2d56.2410631!1m5!1m1!1s0x465228e4c90a9065:0x26019078bd9b5fe2!2m2!1d12.6741639!2d56.2243145!3e1" class="poi white-text"><i class="mdi mdi-map-marker-multiple medium"></i>All Sights</a> </div>
+        </section>
+      </div>
+      <!--
+██████   ██████  ██
+██   ██ ██    ██ ██
+██████  ██    ██ ██
+██      ██    ██ ██
+██       ██████  ██
+-->
+      <section id="trail3Poi" class="col s12 m12 l12">
+        <ul class="collapsible white" data-collapsible="expandable">
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>1: Kärnan Castle</span>
+            <div class="collapsible-body section row"> <img src="img/t3/1.jpg" class="col s12 m12 l12 padBottom" alt="Kärnan Castle" />
+              <p>Kullaleden and Öresundsleden merge at Kärnan, which is the last remnant of the Helsingborg castle. The 34 meter high tower from the 1300s is later replaced with a tower from the 1100s. This is where the Danish Queen Dorothea and Barbara Brahe from Krapperup met before a pilgrimage to Rome in 1475. The surrounding buildings were demolished following the war in the 1600s. A wall chart below Kärnan illustrates the earlier state of the site. In the 1800s the Swedish flag through the work of Alfred Hellerström received its battlements and is now hung now hung on top of Kärnan, which got it´s colors from Oscar Trapp. Trapp visited the National Museum in Amsterdam and managed to get a piece of a looted Swedish flag. Different manufacturers reproduced the colors differently and that´s how the bright colors were established.</p>
+              <p class="row">
+                <a class="trail1 poi col s4" href="https://www.google.com/maps/place/K%C3%A4rnan/@56.0475104,12.6933197,16.19z/data=!4m5!3m4!1s0x0:0xf14aa52ac4a88c9f!8m2!3d56.0483045!4d12.6974978
+"> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
+                <a class="trail1 poi col s4" href="
+https://www.google.com/maps/dir/Current+Location/56.0491111,12.6975556/@56.0471221,12.6954529,16.36z/data=!4m8!1m7!3m6!1s0x0:0x0!2zNTbCsDAyJzU2LjgiTiAxMsKwNDEnNTEuMiJF!3b1!8m2!3d56.049117!4d12.697567
+"> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
+                <a class="trail1 poi col s4" href="
+https://www.google.com/maps/@56.0479393,12.6971674,3a,75y,32.01h,118.99t/data=!3m8!1e1!3m6!1s-HGxiCXJ71nI%2FVa9PGTSwztI%2FAAAAAAAAbKU%2FohfK3sr6WRgXtfe_5e1FbWaFnBHWkVV6wCJkC!2e4!3e11!6s%2F%2Flh5.googleusercontent.com%2F-HGxiCXJ71nI%2FVa9PGTSwztI%2FAAAAAAAAbKU%2FohfK3sr6WRgXtfe_5e1FbWaFnBHWkVV6wCJkC%2Fw203-h100-k-no-pi-0-ya174.40637-ro0-fo100%2F!7i7168!8i3584
+"> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>2: Sofiero Palace</span>
+            <div class="collapsible-body section row"> <img src="img/t3/2.jpg" class="col s12 m12 l12 padBottom" alt="Sofiero Palace" />
+              <p>In 1905, Oscar II's grandchild Prince Gustaf Adolf, future King Gustaf VI Adolf, and his wife, crown princess Margaret received the palace as a wedding gift. They renovated the palace and started the large Rhododendron garden for which the palace is known today. Prince Gustaf Adolf become king in 1950 and until 1973 Sofiero was his and his second wife Lady Louise Mountbatten's official summer residence. It was supposedly the King's favorite place.</p>
+              <p> Prince Gustav Adolf and his wife Margaret had Sofiero as a wedding gift in 1905. The English-born Princess Margaret was very knowledgeable garden and gave the garden a prominent role. She believed that people would use fewer varieties, but many out of each and put the specimens closely together, something that still lives on, for example, in Blomstergatan that bears her name. Crown Prince Gustaf Adolf, whose main interest was the rhododendron garden continued work after Margaret's death, even after he was king. Approximately 10 000 copies of the rhododendrons attracts thousands of visitors every year, especially during the flowering period. On the castle's website you can learn the latest information on flowering. There are also descriptions of the hikes illustrating the royal summer life, gentry and servants, Sofieros flowers and the sculptures found in the park.</p>
+              <p>King Gustav VI Adolf bequeathed the entire plant to the city of Helsingborg which took over in 1974. The park, which in 2010 was named Europe's best park, is also used for outdoor concerts and other events.</p>
+              <p class="center-align">
+                <a class="trail1 poi col s4" href="https://www.google.com/maps/place/Sofiero/@56.0839179,12.6574907,17z/data=!3m1!4b1!4m5!3m4!1s0x465231e4cd906d1f:0x2a6a3d15a0a05e3c!8m2!3d56.0839149!4d12.6596794"> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
+                <a class="trail1 poi col s4" href="https://www.google.com/maps/dir/Current+Location/56%C2%B004'47.6%22N+12%C2%B039'50.5%22E/@56.079883,12.6618443,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.079883!4d12.664033
+"> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
+                <a class="trail1 poi col s4" href="https://www.google.com/maps/@56.0841258,12.6598517,3a,75y,210.62h,98.78t/data=!3m6!1e1!3m4!1svB3lwLuIOvZGe34UW1KAIA!2e0!7i13312!8i6656"> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>3: Hittarp</span>
+            <div class="collapsible-body section row"> <img src="img/t3/3.jpg" class="col s12 m12 l12 padBottom" alt="Hittarp" />
+              <p>In 1717 there was a military fortification in Hittarp. During World War II was considered Hittarp have a position that could be sensitive to a possible hostile attack. Parts of the village was then cordoned off and those who lived inside the barricades were showcasing special passports. Still, there are different types of armor left from Skåne Line, which got its popular name, Per Albin-line, for the then Swedish Prime Minister. (Image taken in Molle) At Serpentinvägen subterranean radar station shown at times. Its antenna sticking up among the treetops.</p>
+              <p class="row">
+                <a class="trail1 poi col s4" href="https://www.google.com/maps/place/Hittarp"> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
+                <a class="trail1 poi col s4" href="https://www.google.com/maps/dir/Current+Location/56%C2%B005'37.7%22N+12%C2%B038'26.3%22E/@56.093817,12.6384613,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.093817!4d12.64065
+"> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
+                <a class="trail1 poi col s4" href="https://www.google.com/maps/@56.093833,12.6406271,3a,75y,136.36h,89.87t/data=!3m7!1e1!3m5!1sGUa69pRyA13lL2X9HzOk3g!2e0!3e2!7i13312!8i6656"> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>4: Gunnarstorp</span>
+            <div class="collapsible-body section row"> <img src="img/t3/4.jpg" class="col s12 m12 l12 padBottom" alt="Gunnarstorp" />
+              <p>The sea erosion that occured Below Kulla Gunnarstorp castle has affected the shoreline and because of this laid bare the sandstone ground, a reminder of when the sea level was 6-7 meters higher, approx. 4000-7000 years ago. The vertical sandstone ledges are saturated by water. The area is a nature reserve with beech wood, gullies and Bronze Age mounds and has been inhabited since prehistoric times.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B006'25.0%22N+12%C2%B037'31.5%22E/@56.106933,12.6232283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.106933!4d12.625417
+								"> <span class="poi">4:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>5: Domsten</span>
+            <div class="collapsible-body section row"> <img src="img/t3/5.jpg" class="col s12 m12 l12 padBottom" alt="Domsten" />
+              <p>Helsingborg Camping Club’s operations were established in 1932 and are unique. It was initially all about camping, but in the 1940s, white Masonite cottages replaced the tents, and they are set up each spring. In the autumn the cottages are dismantled and the foundations are all that remains, the trail run through the area. At “Fornminnet” there is a bus stop along the forest slope for those want to start or end their hike. . The stop probably got its name due to the Bronze Age mounds and six Neolithic settlements recorded in the vicinity. </p>
+              <p>The name “Domsten” has nothing to do with law making. It occurs early as “Dompäng”, a wet meadow, which is situated inside “Domasten”. “Domp” derives from the German word “damp” which concerns mist and steam. Which “rock” (sten) the name refers to is unclear.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B006'37.6%22N+12%C2%B037'02.0%22E/@56.110433,12.6150283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.110433!4d12.617217
+								"> <span class="poi">5:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>6: Domsten/Viken</span>
+            <div class="collapsible-body section row"> <img src="img/t3/6.jpg" class="col s12 m12 l12 padBottom" alt="Domsten/Viken" />
+              <p>A colony of harbor seals frequently spends time on the reef just northwest of the windbreak. Approx. 150 seals can be seen at the same time laying on the rocks or playing in the water towards the shore. Sea eagles appear sometimes on cold autumn and winter mornings. You can find Giant horsetail, equisetum telemateia, sea lyme-grass and European marram grass, growing on the dunes and wetlands. </p>
+              <p>The grooves emerged during the Neolithic period and were later appropriately laid by the shore. A strait separated the Kulla peninsula from Jonstorp to Viken.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B007'29.8%22N+12%C2%B035'54.3%22E/@56.124933,12.5962283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.124933!4d12.598417
+								"> <span class="poi">6:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>7: Viken</span>
+            <div class="collapsible-body section row"> <img src="img/t3/7.jpg" class="col s12 m12 l12 padBottom" alt="Viken" />
+              <p>Many foreign ships ran aground outside Svinbådan. There are tales of wreck auctions in the mid-1800s where large amounts of salvaged goods were sold. During the 1850s, life-saving stations were established around the district, among them where the ones in Viken (est.1857) and Svinbådan (est.1866). The lightship in Svinbådan was replaced in 1960 by the fixed beacon that you see along the hike trails.</p>
+              <p>Peder Wessel was an ennobled Tordenskiold, and was one of the many who sunk at Viken. In 1717, Peder Wessel was on his way from the Swedish coast to Copenhagen to explain to the King why he’d failed to take Strömstad. It has also been claimed that the ship’s chest was buried in the sand by the golf course at Viken. Several have looked, but no one has found it.</p>
+              <p>Many vessels have run aground along the coast. In 1850 the koff Jantina ran aground off of Viken and 80,000 pounds of damaged coffee was auctioned.</p>
+              <p>In 1851, 200,000 pounds of Java sugar, 200 quarts Batavia Arrac, cognac, rum, grain brandy, chicory were sold and the wreck of Louise on its way from the East Indies to Copenhagen.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B009'03.8%22N+12%C2%B034'08.9%22E/@56.15105,12.5669613,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.15105!4d12.56915
+								"> <span class="poi">7:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>8: Höganäs</span>
+            <div class="collapsible-body section row"> <img src="img/t3/8.jpg" class="col s12 m12 l12 padBottom" alt="Höganäs" />
+              <p>The architect Cyrillus Johansson was hired when Höganäs was to install municipal water in 1932. Keep your eye on the water tower and walk into Hamngatan between a red timber building and a yellow house with brown eyebrows above the windows. The old bridge remains under the plot of land. The red building is now a private residence, but has housed both an inn and customs house. The building was moved here, probably from Helsingborg around 1800, and served as a "traveler’s inn".</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B012'00.8%22N+12%C2%B032'54.7%22E/@56.200217,12.5463443,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.200217!4d12.548533
+								"> <span class="poi">8:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>9: Mölle</span>
+            <div class="collapsible-body section row"> <img src="img/t3/9.jpg" class="col s12 m12 l12 padBottom" alt="Mölle" />
+              <p>We’re now approaching Mölle and the residential area Gylleröd on the right. Mölle chapels stepped gable tower sticks out of the greenery in the summer. The artist Gunnar Valentin used local models in producing the altarpiece in the medieval-inspired chapel. The hill above the church is a sea of blue from early hepatica around spring. Göran Malmqvist wrote: </p>
+              <p> “Delightful music: Last year’s rustle of leaves as a comp to the hepatica choir”. </p>
+              <p> Mölle could have been an ideal landing site for a possible enemy during World War II. Defences were created in order to prevent this including blasting the harbor pier, if nothing else helped. Carved crosses on the edge of quay still mark the explosive chambers. </p>
+              <p> An engraved water-level gauge on Mågehallen indicates the water level. In addition to the graduations, the year 1750 and the initials AMS and AMA have been carved in. The military engineers A M von Strussenfelt and A M von Arbin had visited Mölle to investigate whether conditions existed to ship out stone to the citadel in Landskrona. </p>
+              <p> A water-level gauge is an instrument for measuring the water level. This particular water-level gauge may have been built as a part of the discussions in the 1700s about “the sea’s rising and falling”.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B016'41.2%22N+12%C2%B030'07.8%22E/@56.2781,12.4999783,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2781!4d12.502167
+								"> <span class="poi">9:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>10: Solviken</span>
+            <div class="collapsible-body section row"> <img src="img/t3/10.jpg" class="col s12 m12 l12 padBottom" alt="Gunnarstorp" />
+              <p>We’ll soon arrive at Solviken. Here you’ll find proximity to ladies’ bathing and a children's pool. There used to be a pier for shipping stone from the quarry, which was below Barakullen. In a painting from 1867 you can see that the quarry made it impossible to walk further towards Ransvik. Kullabergs Natur AB was established through a collection in 1913 in order to prevent Kullaberg from being sold from Krapperup for industrial quarrying. Western Kullaberg is now owned by the Swedish Environmental Protection Agency, and has since 1971 been a nature reserve managed by the County Board. Accessibility has improved since stone quarrying stopped, however in the late summer and autumn, it’s beneficial to relax here. If you have the patience, you can find the rare Purseweb spiders where the male is about to enter the females burrow during winter. </p>
+              <p> After the sea-worn limestone pillar formation with spotted cat's ears that extend towards the crevices the trail will continue with high steps and paths along the cliff edge. Along the way you’ll find handles, handrails or ropes to hold on to. Current hiking terminology labels this route as medium difficulty. We are now up on Kullaberg and many hikers prefer using hiking poles, especially when walking downhill. In the side of the rock at the so-called Diamond Cliffs is a 15 metre wide amphibolite path.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B017'22.2%22N+12%C2%B029'08.0%22E/@56.2895,12.4833783,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2895!4d12.485567
+								"> <span class="poi">10:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>11: Ransvik</span>
+            <div class="collapsible-body section row"> <img src="img/t3/11.jpg" class="col s12 m12 l12 padBottom" alt="Ransvik" />
+              <p>Där krattskogen slutar kommer på senvåren en mäktig doft av ramslök strax före Ransvik, badplatsen som fotografen Peter P Lundh gjorde vida känd i början av 1900-talet med vykort av badande kvinnor och män i randiga badkostymer. De tidiga ”gemensamhetsbaden” här sägs ha gett upphov till ryktet om ”synden i Mölle”. Trappor och en hiss leder ner till badplatsen och det sommaröppna Ellens Café i en byggnad delvis från 1915.</p>
+              <p> Vandringsleden fortsätter från P-platsen mellan trapporna och Mölle golfbana, men innan dess gör vi en liten avstickare till Jannes lycka och en backig genväg för den som vill återvända till Mölle.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B017'30.2%22N+12%C2%B028'34.3%22E/@56.291733,12.4739943,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.291733!4d12.476183
+								"> <span class="poi">11:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>12: Arild</span>
+            <div class="collapsible-body section row"> <img src="img/t3/12.jpg" class="col s12 m12 l12 padBottom" alt="Arild" />
+              <p>We’ll now get a first glimpse of Arild. Stop for a while and look over the hillside towards Skälderviken. In accordance with the exhibition H55 in Helsingborg, a naval exercise took place here in Ladarp July 24th 1955. </p>
+              <p> A grandstand had been built for prominent visitors, including the then Swedish Queen Louise. She was one of 125,000 people who attended “Operation Kullen”, containing 47 different ships. There are photographs of the minesweeping, artillery firing and anti-submarine warfare in Höganäs municipality's photo archive.</p>
+              <p> The spectators arrived in 25,000 cars, which were parked in the fields to the south. The road from Ängelholm was one-way here - everyone was going in the same direction - so you could drive in double files. After the event the one-way traffic went in the other direction.</p>
+              <p> Svensmalen is along Klötesvägen, east of Arild’s harbor, where the young Arild's body was said to have left an imprint. To get to Arild’s bus stop you can climb up the steps at Purras hill.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/260+43+Arild,+Sweden/@56.2752522,12.5713686,16.67z/data=!4m5!3m4!1s0x4652277892343af5:0x34474d479e2d4217!8m2!3d56.2708361!4d12.5783573
+"> <span class="poi">12:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>13: Klötet</span>
+            <div class="collapsible-body section row"> <img src="img/t3/13.jpg" class="col s12 m12 l12 padBottom" alt="Klötet" />
+              <p>The nearest swimming area is Klötet, closely followed by an outdoor pool. Before we reach the next swimming area, we encounter a bear, gazing at the sea. This is one of the exciting sea-worn limestone pillars on this stretch. We are now inside “Lockens Grund” close to an old boat launching site. We’ll walk among grazing cows and sheep on former carriage roads. A popular location for outdoor weddings is a spot by a bench to the left. It was also here that Ingmar Bergman found a suitable environment in 1953 for scenes in the film Sawdust and Tinsel.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/KL%C3%96TETS+BADPLATS+1NA,+260+43+Arild,+Sweden/@56.2730383,12.5776347,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x46522783933bfacd:0x346383c98d0506fc!2sKl%C3%B6tesv%C3%A4gen,+260+43+Arild,+Sweden!3b1!8m2!3d56.2744416!4d12.5751604!3m4!1s0x465227845422b205:0x494b44e0e587cc6f!8m2!3d56.2730383!4d12.5798234"> <span class="poi">13:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>14: Arild-Skäret</span>
+            <div class="collapsible-body section row"> <img src="img/t3/14.jpg" class="col s12 m12 l12 padBottom" alt="Arild-Skaret" />
+              <p>These are the three burial mounds and a stone circle called Nabben or Stensnäs with Nabbahögarna. According to Cilla Banck the small building was constructed of granite in the early 1800s also known as “Mother Bengta’s” house. “It was a time of large herring fisheries, when 3 boats went ashore at Stenenäs. That was why mother Bengta from Kjöge built this little house, she spent her time selling coffee to the fishermen who ported here”. She baked cakes, sewed baby clothes and sometimes sat on a rock in the harbor and knitted sweaters and hats that she sold. The road between Arild and Skäret, near Nabbavägen was named after her (Mor Bengtas väg). Along the road is a bathing area maintained by the residential area of Stenedal. </p>
+              <p> We are passing through a country lane surrounded by fences and gates for grazing animals. The land is a remnant of the old Kulla pastures, which were the common pastures for Kullen. In the autumn you will often find the little fungus Parrot Waxcap, which at the end of its growing period fools the inexperienced to think that it is a coltsfoot. Below the central houses on the hill is a small fen with grass and sedge vegetation and various mosses in the bottom layer. The pebble beaches clearly show how high the shoreline has been at different times. </p>
+              <p> When the schooner Elida was launched it all went wrong, which was perhaps an omen. It was repaired and launched again, but faired no better and disappeared in 1879 on the North Sea with a six-man crew. The entire crew were unmarried except captain Lock, who had a family. One of the votive ships in Arild’s chapel is a copy of Elida. </p>
+              <p> Fact - The self-taught travelling teacher and chapel caretaker Cilla Banck (1830 - 1906) collected curiosity objects for a small “home museum” and she kept a diary of events in the area. Her residence next to the chapel is now gone and the objects have become scattered, but her diaries have been preserved.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B016'00.3%22N+12%C2%B036'14.0%22E/@56.266751,12.6017003,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.266751!4d12.603889"> <span class="poi">14:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>15: Skäret</span>
+            <div class="collapsible-body section row"> <img src="img/t3/15.jpg" class="col s12 m12 l12 padBottom" alt="Skäret" />
+              <p>We’ll be approaching Skäret on a gravel road through a small scrubland area and after a pumping station. You can still winch boats down to the landing area in front of machine-gun post no. 776 and the subsequent bathing area. On the shore meadow you can see angelica, sea aster and sea plantain growing. Ivy-leaved toadflax, mullein, fern and forked spleenwort have their habitats on both sides of the harbor. The black tar lichen, verrucaria maura often forms black coatings on rocks out on the beach. We enter Skäret through Säldynevägen, named after a large flat stone, Säldynan. Säldynan is a favourite spot for seals.</p>
+              <p> Skäret is the youngest harbor of the former Brunnby parish and one of the younger in Kullabygden. The name simply means "rock". Initially boats were moored within a few hillocks, but in 1870 they started to build the harbor. Among others, stones, at least 25 centimetres thick, were dragged out in the winter and were laid on the ice, according to a well thought out plan, so that they fell down and formed the bottom of the harbor when the ice melted. Next to the harbor is Skäret’s art gallery, which is famous for being the smallest in the country. After ten years of exhibitions, the museum now takes in visiting artists, “artists in residence”.</p>
+              <p> The community first consisted of two parallel streets, Grönadalsvägen and Sofias väg, which was named after Sofia Persson. Sofia lived in the extended house at the eastern end of Grönadalsvägen. Sofia raised more than twenty foster children and her own daughter. Her husband, Olof, built the unusual one brick wall that we’ll get a glimpse of heading towards the windbreak.</p>
+              <p>After the settlement, a steep hill with twelve iron-shod steps leads up to the summer cottage area at Plidehallsvägen.</p>
+              <p>At Tvättehallsvägens end you can find Svanshalls other bathing areas whose stone outcrops exhibit fossils of sea urchins.</p>
+              <p class="center-align">
+                <a class="trail1 poi" href="https://www.google.com/maps/dir/Current+Location/56%C2%B015'51.9%22N+12%C2%B036'47.3%22E/@56.264414,12.6109443,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.264414!4d12.613133"> <span class="poi">15:</span> <i class="mdi mdi-map-marker medium"></i></a>
+              </p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Rekekroken</span>
+            <div class="collapsible-body section row"> <img src="img/t3/16.jpg" class="col s12 m12 l12 padBottom" alt="Rekekroken" />
+              <p>The most interesting part in Renekrok is situated below Gustav's place at the water's edge - the Cambrian quartzite. This is one of the few places in Sweden where it is exposed, but the whole community rests on 400 - 600 million year old foundations. In the Litorinavallen above there are quartzites in a disintegrate state. The picture was taken in 2014.</p>
+              <p> But the community is quite young. During the latter part of the 1800s many farmers moved out of their fishing huts during the herring season, and eventually the “sailor fisherman” settled on the farmers' common property, the beach gravel.</p>
+            </div>
+          </li>
+          <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Jonstorp</span>
+            <div class="collapsible-body section row"> <img src="img/t3/17.jpg" class="col s12 m12 l12 padBottom" alt="Jonstorp" />
+              <p>Many findings from the Stone Age have been made in Jonstorp and the older neighbouring village Görslöv. The Jonstorp area is one of the most important locations in Sweden for those who want to study coastal Neolithic cultures. The initiator of the excavations was Oskar Lidén (1870-1957), who served as headmaster at the elementary school in Jonstorp 1909-1919. His activities are still based for modern-day archaeologists. The library in Jonstorp, at Lidéns plats, houses a part of the stone collection he donated to a small Stone Age museum. Grateful Jonstorp villagers and students honored him with a bronze plaque by Helsingborg artist Folke Svensson, also now in the library. Several streets in the residential area on the former mill hill have names that are associated to him and his finds, for example, Lidéns väg and Fornminnesvägen, where the sea wall was covered with Neolithic finds.</p>
+              <p> The sandy beach is shallow and therefore ideal for families with small children, perhaps one reason why the summer cottage settlement was established here in the 1930-1940s beneath the old farms. The sand dunes are two-three metres high and are bound by grass and sand sedge. On the narrow coastal heath endangered plant species such as adder's-tongue, cross-leaved heath, common moonwort and lesser butterfly-orchid intermingle with much more common plants. </p>
+              <p> In mid-June, we found a number of species adjacent to the beach: tufted grass, early marsh orchid, silverweed, mouse-ear hawkweed, white clover, thrift, blue bonnets, bird's-foot trefoil, meadow pea, and hop trefoil, common rush, grey hair-grass, German knotweed, English plantain, orchard grass, wild angelica, marsh and creeping thistle as well as the lesser butterfly-orchid in an area of just a few square metres.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </main>
+  <!--
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+-->
+  <footer class="page-footer blue darken-4 white-text trails">
+    <section id="contact" class="row">
+      <div class="col s12 m6 l12">
+        <div class="col s8 m12 l4 pad"> <img src="img/kullabergsNaturum.svg" alt="Naturum Kullaberg" class="responsive-img" /></div>
+        <div class="col s12 m12 l8 margin-spacerTop pad contactButtons"> <a href="mailto:naturum.kullaberg@lansstyrelsen.se?cc=carlos.velasco@lansstyrelsen.se" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: naturum.kullaberg@lansstyrelsen.se"><i class="mdi mdi-email medium grey-text text-lighten-4 contactIcon"></i></a>
+          <a href="tel:46042347056" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Tel: +46 (0)42 347 056"> <i class="mdi mdi-phone-classic medium grey-text text-lighten-4 contactIcon"></i></a> <a href="http://www.kullabergsnatur.se/" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Website: KullabergsNatur.se"><i class="mdi mdi-web medium grey-text text-lighten-4 contactIcon"></i></a> <a href="https://www.facebook.com/kullabersnaturreservat/" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Facebook: Kullabergs Naturreservat"><i class="mdi mdi-facebook-box medium grey-text text-lighten-4 contactIcon"></i></a> <a href="https://www.instagram.com/kullabergsnaturreservat/" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Instagram: naturum Kullaberg"><i class="mdi mdi-instagram medium grey-text text-lighten-4 contactIcon"></i></a> </div>
+      </div>
+    </section>
+    <div class="footer-copyright row">
+      <div class=" col s6 m4">Design <br> <a class="orange-text text-lighten-3 modal-trigger " href="#modal1">Carlos Velasco</a> </div>
+      <div class="col s6 m4">Sponsors <br> <a class="orange-text text-lighten-3 modal-trigger " href="#skane">Region Skåne</a> <br> <a class="orange-text text-lighten-3 modal-trigger " href="#lansstyrelsen">Lansstyrelsen Skåne</a> </div>
+    </div>
+  </footer>
+  <!--
+███    ███  ██████  ██████   █████  ██      ███████
+████  ████ ██    ██ ██   ██ ██   ██ ██      ██
+██ ████ ██ ██    ██ ██   ██ ███████ ██      ███████
+██  ██  ██ ██    ██ ██   ██ ██   ██ ██           ██
+██      ██  ██████  ██████  ██   ██ ███████ ███████
+-->
+  <div id="modal1" class="modal">
+    <div class="modal-content row center-align">
+      <div class="col s12">
+        <h2 class="blue-text text-darken-4">Carlos Velasco</h2>
+        <h4 class="flow-text">Interactive Design and Web Development</h4>
+      </div>
+      <div class="col s12"> <a href="mailto:Carlos@2ActiveDesign.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email medium"></i></a>
+        <a href="tel:460737298257" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Tel: 073-729 82 57"> <i class="mdi mdi-phone-classic medium"></i></a> <a href="https://www.linkedin.com/in/carlosevelasco" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="LinkedIn Profile"><i class="mdi mdi-linkedin medium"></i></a>
+        <a href="https://www.behance.net/2Active" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Behance Portfolio"> <i class="mdi mdi-behance	medium"></i> </a> <a href="https://github.com/xtreemze?tab=repositories" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Github Repositories"><i class="mdi mdi-github-box medium"></i></a> </div>
+    </div>
+  </div>
+  <div id="skane" class="modal">
+    <div class="modal-content row center-align"> <img src="img/regionSkane.svg" alt="Region Skane" class="responsive-img" /> </div>
+  </div>
+  <div id="lansstyrelsen" class="modal">
+    <div class="modal-content row center-align"> <img src="img/lansstyrelsen.svg" alt="Lansstyrelsen Skane" class="responsive-img" /> </div>
+  </div>
+  <!--
+███████  ██████ ██████  ██ ██████  ████████
+██      ██      ██   ██ ██ ██   ██    ██
+███████ ██      ██████  ██ ██████     ██
+     ██ ██      ██   ██ ██ ██         ██
+███████  ██████ ██   ██ ██ ██         ██
+-->
+  <script src="js/init.js"></script>
+  <script src="bundle.js" /></script>
+</body>
+
+</html>

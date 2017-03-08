@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Kullaberg</title>
+    <meta name="theme-color" content="#0d47a1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="canonical" href="https://xtreemze.github.io/KullabergApp/index.html" />
+
+    <!--
+ .d8888b.   .d8888b.   .d8888b.  
+d88P  Y88b d88P  Y88b d88P  Y88b 
+888    888 Y88b.      Y88b.      
+888         "Y888b.    "Y888b.   
+888            "Y88b.     "Y88b. 
+888    888       "888       "888 
+Y88b  d88P Y88b  d88P Y88b  d88P 
+ "Y8888P"   "Y8888P"   "Y8888P"  
+                                 
+-->
+
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/master.min.css">
+
+
+<!--
+8888888888     d8888 888     888 8888888 .d8888b.   .d88888b.  888b    888 
+888           d88888 888     888   888  d88P  Y88b d88P" "Y88b 8888b   888 
+888          d88P888 888     888   888  888    888 888     888 88888b  888 
+8888888     d88P 888 Y88b   d88P   888  888        888     888 888Y88b 888 
+888        d88P  888  Y88b d88P    888  888        888     888 888 Y88b888 
+888       d88P   888   Y88o88P     888  888    888 888     888 888  Y88888 
+888      d8888888888    Y888P      888  Y88b  d88P Y88b. .d88P 888   Y8888 
+888     d88P     888     Y8P     8888888 "Y8888P"   "Y88888P"  888    Y888 
+                                                                                                                                                      
+                                                                           
+-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png?v=eEEwEaEvl1">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png?v=eEEwEaEvl1">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png?v=eEEwEaEvl1">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png?v=eEEwEaEvl1">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png?v=eEEwEaEvl1">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png?v=eEEwEaEvl1">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png?v=eEEwEaEvl1">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png?v=eEEwEaEvl1">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png?v=eEEwEaEvl1">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png?v=eEEwEaEvl1" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-194x194.png?v=eEEwEaEvl1" sizes="194x194">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png?v=eEEwEaEvl1" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon/android-chrome-192x192.png?v=eEEwEaEvl1" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png?v=eEEwEaEvl1" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg?v=eEEwEaEvl1" color="#336699">
+    <link rel="shortcut icon" href="favicon.ico?v=eEEwEaEvl1">
+    <meta name="msapplication-TileColor" content="#336699">
+    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png?v=eEEwEaEvl1">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml?v=eEEwEaEvl1">
+
+<!--
+ .d8888b.                   d8b          888             
+d88P  Y88b                  Y8P          888             
+Y88b.                                    888             
+ "Y888b.    .d8888b 888d888 888 88888b.  888888 .d8888b  
+    "Y88b. d88P"    888P"   888 888 "88b 888    88K      
+      "888 888      888     888 888  888 888    "Y8888b. 
+Y88b  d88P Y88b.    888     888 888 d88P Y88b.       X88 
+ "Y8888P"   "Y8888P 888     888 88888P"   "Y888  88888P' 
+                                888                      
+                                888                      
+                                888                      
+    -->
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/materialize.min.js" charset="utf-8"></script>
+    <script src="js/master.js"></script>
+    <script src="bundle.js"></script>
+</head>
+
+<body class="grey lighten-4">
+<!--
+888                            888                                      
+888                            888                                      
+888                            888                                      
+888      .d88b.   8888b.   .d88888  .d88b.  888d888                     
+888     d88""88b     "88b d88" 888 d8P  Y8b 888P"                       
+888     888  888 .d888888 888  888 88888888 888                         
+888     Y88..88P 888  888 Y88b 888 Y8b.     888                         
+88888888 "Y88P"  "Y888888  "Y88888  "Y8888  888                         
+                                                                        
+                                                                        
+                                                                        
+-->
+
+    <section class="loader valign-wrapper">
+        <div class="centerLoader">
+            <div class="preloader-wrapper big active valign center-align">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+███    ██  █████  ██    ██
+████   ██ ██   ██ ██    ██
+██ ██  ██ ███████ ██    ██
+██  ██ ██ ██   ██  ██  ██
+██   ████ ██   ██   ████
+-->
+    <header class="navbar trails z-depth-2">
+        <nav class="blue darken-4" role="navigation">
+            <div class="nav-wrapper"> <a class="brand-logo" id="logo-container"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Kullaberg</span></a>
+                <ul class="right hide-on-med-and-down">
+                    <!-- <li><a onclick="showNotification();">Notify</a></li> -->
+                    <li> <a href="maps.html" onclick="mapMsg();">Trail Map</a> </li>
+                    <li> <a href="poi.html">Points of Interest</a> </li>
+                    <li> <a onclick="flashContact();">Contact Us</a> </li>
+                </ul>
+            </div>
+        </nav>
+        <!--
+███████  █████  ██████
+██      ██   ██ ██   ██
+█████   ███████ ██████
+██      ██   ██ ██   ██
+██      ██   ██ ██████
+-->
+        <div class="fixed-action-btn click-to-toggle trails">
+            <a class="btn-floating btn-large red darken-2 bounceIn">
+                <div class="nav-icon4"> <span></span> <span></span> <span></span><span></span> </div>
+            </a>
+            <ul>
+                <!-- <li><a class="btn-floating purple darken-2 tooltipped"
+										data-position="left"
+										data-delay="50"
+										data-tooltip="Notify"
+										onclick="showNotification();"><i class="mdi mdi-vibrate"></i></a></li> -->
+                <li> <a class="btn-floating blue darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Trail Map" href="maps.html" onclick="mapMsg();"><i class="mdi mdi-map"></i></a> </li>
+                <li> <a class="btn-floating orange darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Points of Interest" href="poi.html"><i class="mdi mdi-map-marker-radius"></i></a> </li>
+                <li> <a class="btn-floating yellow darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Contact Us" onclick="flashContact();"><i class="mdi mdi-phone"></i></a> </li>
+            </ul>
+        </div>
+        <!--
+████████  █████  ██████  ███████
+	 ██    ██   ██ ██   ██ ██
+	 ██    ███████ ██████  ███████
+	 ██    ██   ██ ██   ██      ██
+	 ██    ██   ██ ██████  ███████
+-->
+        <div class="tabSpacer trails">
+            <section class="tabs-wrapper">
+                <div class="col s12">
+                    <ul class="tabs">
+                        <li class="tab col s3"> <a href="#news" onclick="tabOperationNews();">News</a> </li>
+                        <li class="tab col s3"> <a href="#instructions" onclick="tabOperationNews();">Instructions</a> </li>
+                        <li class="tab col s3"> <a href="#report" onclick="tabOperationNews();">Report</a> </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </header> <br>
+    <main class="trails row">
+        <!--
+███████ ███████  ██████  ██
+██      ██      ██      ███
+███████ █████   ██       ██
+     ██ ██      ██       ██
+███████ ███████  ██████  ██
+-->
+        <section id="news">
+            <section class="col s12 m12 l8">
+                <div class="card horizontal">
+                    <div class="card-image green darken-2"><i class="mdi mdi-newspaper large white-text"></i></div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <div class="flow-text">
+                                <p>News</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--
+███    ██ ███████ ██     ██ ███████
+████   ██ ██      ██     ██ ██
+██ ██  ██ █████   ██  █  ██ ███████
+██  ██ ██ ██      ██ ███ ██      ██
+██   ████ ███████  ███ ███  ███████
+-->
+            <section class="col s12 m12 l12">
+                <ul class="collapsible white" data-collapsible="expandable">
+                    <li> <span class="title collapsible-header"><i class="mdi mdi-new-box green-text text-darken-2"></i>Kullaberg Webapp Launched</span>
+                        <div class="collapsible-body section row">
+                            <div class="center-align"> <img src="img/Kv4sq.svg" alt="Kullaberg" class="padBottom responsive-img" /></div>
+                            <p>The Kullaberg Webapp has been rebuilt from the ground up. You may now open the app on any internet web browser on any modern platform.</p>
+                            <p>If you would like to contribute, you can contact us or get started right away if you have web programming experience. This is an opensource project.</p>
+                            <p> <span class="strong">App Features</span><br>Zoomable vector maps<br> Responsive Design<br> Material Design Standards<br> Offline Capability<br> Automatic Language Detection<br> Direct Contact Buttons <br>Optional Install to
+                                Home or Desktop <br>MIT Open Source Github Repo </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <!--
+███████ ███████  ██████     ██████
+██      ██      ██               ██
+███████ █████   ██           █████
+     ██ ██      ██          ██
+███████ ███████  ██████     ███████
+-->
+        <section id="instructions">
+            <section class="col s12 m12 l8">
+                <div class="card horizontal">
+                    <div class="card-image green darken-2"><i class="mdi mdi-help large white-text"></i></div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <div class="flow-text">
+                                <p>App Instructions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--
+██ ███    ██ ███████ ████████ ██████  ██    ██  ██████ ████████
+██ ████   ██ ██         ██    ██   ██ ██    ██ ██         ██
+██ ██ ██  ██ ███████    ██    ██████  ██    ██ ██         ██
+██ ██  ██ ██      ██    ██    ██   ██ ██    ██ ██         ██
+██ ██   ████ ███████    ██    ██   ██  ██████   ██████    ██
+-->
+            <section class="col s12 m12 l12">
+                <ul class="collapsible white" data-collapsible="expandable">
+                    <li> <span class="title collapsible-header"><i class="mdi mdi-menu red-text text-darken-2"></i>Using the Floating Action Button</span>
+                        <div class="collapsible-body section row">
+                            <p>You will find a red floating action button on the bottom right corner of your screen. When this button is pressed, it will reveal a few additional buttons that you may also press. These buttons are detailed bellow.</p>
+                            <p> <a class="btn green darken-2 z-depth-0 col s12"><i class="mdi mdi-newspaper"></i>News</a> <br>This is the main page of the app which you will see first. Use this button to check recent news and events in Kullaberg, access app
+                                instructions and recomended ways to report your observations to the staff. </p>
+                            <p> <a class="btn blue darken-2 z-depth-0 col s12"><i class="mdi mdi-map"></i>Maps</a> <br>Click this button to see the available maps: Kullaberg Trail Map, Kullaleden Infomap, and a Sattelite view of the Kullaleden SL5 Trail.
+                                Use pinch-zoom gestures to zoom in on the maps to get a better view of the desired area. You can also reference these maps offline.</p>
+                            <p> <a class="btn orange darken-2 z-depth-0 col s12"><i class="mdi mdi-map-marker-radius"></i>Points of Interest</a> <br>Click or touch this button to learn and browser through important points of interest from Kullaleden, Western
+                                Kullaberg and Sights of Heritage. </p>
+                            <p> <a class="btn orange darken-2 z-depth-0 col s12"><i class="mdi mdi-google-maps"></i>Explore Location</a> <br>You will find this button once you expand a Point of Interest while exploring the trails. Click or touch this button
+                                to open your prefered map application, Google or Apple Maps and learn about landmarks that interest you. You can then use your map app as you normally would to find directions and compare the destination to your location.
+                                You can then press the back button on your phone to return to the Kullaberg App and continue browsing other points of interest.</p>
+                            <p> <a class="btn yellow darken-2 z-depth-0 col s12"><i class="mdi mdi-phone"></i>Contact</a> </p>
+                            <p>Use this button to contact us. Contact options include email, phone, website, facebook and instagram. </p>
+                            <p> <a class="btn blue darken-2 z-depth-0 col s12"><i class="mdi mdi-crosshairs-gps"></i>Locate</a> <br>Use this button to find your longitude and lattitude. The app will ask for permission to find your location.</p>
+                        </div>
+                    </li>
+                    <li> <span class="title collapsible-header"><i class="mdi mdi-reload red-text text-darken-2"></i>Updating the App</span>
+                        <div class="collapsible-body section row">
+                            <p>Updating is easy and automatic. Simply open the app and it will automatically check if there is any update available. If there is, it will begin to download the new information immediately and will notify you when it is done.
+                                When it is ready, you simply reload the page, or reopen the app and the new version will be visible.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <!--
+███████ ███████  ██████     ██████
+██      ██      ██               ██
+███████ █████   ██           █████
+     ██ ██      ██               ██
+███████ ███████  ██████     ██████
+-->
+        <section id="report">
+            <section class="col s12 m12 l8">
+                <div class="card horizontal">
+                    <div class="card-image green darken-2"><i class="mdi mdi-exclamation large white-text"></i></div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <div class="flow-text">
+                                <p>Report</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--
+██████  ███████ ██████   ██████  ██████  ████████
+██   ██ ██      ██   ██ ██    ██ ██   ██    ██
+██████  █████   ██████  ██    ██ ██████     ██
+██   ██ ██      ██      ██    ██ ██   ██    ██
+██   ██ ███████ ██       ██████  ██   ██    ██
+-->
+            <section class="col s12 m12 l12">
+                <ul class="collapsible white" data-collapsible="expandable">
+                    <li> <span class="title collapsible-header"><i class="mdi mdi-menu red-text text-darken-2"></i>Using the Contact Icons</span>
+                        <div class="collapsible-body section row">
+                            <p>You will find contact buttons on the bottom of the app. When these buttons are pressed, it will perform an action to contact us. These buttons are detailed bellow.</p>
+                            <p> <a class="btn blue darken-2 z-depth-0 col s12"><i class="mdi mdi-email"></i>EMail</a> <br>This button will automatically open your prefered email client and address the email to the naturum. You may then proceed to provide
+                                your name as a sender and a message in the body of the email. You may also attach any necesary files or pictures and send the email when you are ready. </p>
+                            <p> <a class="btn blue darken-2 z-depth-0 col s12"><i class="mdi mdi-phone-classic"></i>Phone</a> <br>Click this button to open your prefered dialing app and automatically enter the Naturum Phone number. You may then press the
+                                dial button when you are ready to talk to us. Normal charges may apply by using your phone service.</p>
+                            <p> <a class="btn blue darken-2 z-depth-0 col s12"><i class="mdi mdi-web"></i>Website</a> <br>Press this button to or touch this button to open Naturum Kullaberg's website where you will find more information.</p>
+                            <p> <a class="btn blue darken-2 z-depth-0 col s12"><i class="mdi mdi-facebook-box"></i>Facebook</a> </p>
+                            <p>We keep our facebook page up to date and interact regularly with our visitors! Give us a like and rate us.</p>
+                            <p> <a class="btn blue darken-2 z-depth-0 col s12"><i class="mdi mdi-instagram"></i>Instagram</a> <br>We have an instagram account where we post short videos of the various activities that take place in and around Kullaberg. Follow
+                                us and comment!</p>
+                        </div>
+                    </li>
+                    <li> <span class="title collapsible-header"><i class="mdi mdi-hospital red-text text-darken-2"></i>For Emergencies</span>
+                        <div class="collapsible-body section row">
+                            <p>Please dial 112.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section class=" col s12 hide-on-large-only">
+            <div class="row">
+                <a href="maps.html">
+                    <div class="btn-large blue darken-2 center-align col s12 m6 card"><i class="mdi mdi-map"></i>View Trail Maps</div>
+                </a>
+                <a href="poi.html">
+                    <div class="btn-large orange darken-2 center-align col s12 m6 card"><i class="mdi mdi-map-marker-radius"></i>Points of Interest</div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!--
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+-->
+    <footer class="page-footer blue darken-4 white-text trails">
+        <section id="contact" class="row">
+            <div class="col s12 m6 l12">
+                <div class="col s8 m12 l4 pad"> <img src="img/kullabergsNaturum.svg" alt="Naturum Kullaberg" class="responsive-img" /></div>
+                <div class="col s12 m12 l8 margin-spacerTop pad contactButtons"> <a href="mailto:naturum.kullaberg@lansstyrelsen.se?cc=carlos.velasco@lansstyrelsen.se" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: naturum.kullaberg@lansstyrelsen.se"><i class="mdi mdi-email medium grey-text text-lighten-4 contactIcon"></i></a>
+                    <a href="tel:46042347056" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Tel: +46 (0)42 347 056"> <i class="mdi mdi-phone-classic medium grey-text text-lighten-4 contactIcon"></i></a>
+                    <a href="http://www.kullabergsnatur.se/" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Website: KullabergsNatur.se"><i class="mdi mdi-web medium grey-text text-lighten-4 contactIcon"></i></a>
+                    <a href="https://www.facebook.com/kullabergsnaturreservat/" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Facebook: Kullabergs Naturreservat"><i class="mdi mdi-facebook-box medium grey-text text-lighten-4 contactIcon"></i></a>
+                    <a href="https://www.instagram.com/kullabergsnaturreservat/" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Instagram: naturum Kullaberg"><i class="mdi mdi-instagram medium grey-text text-lighten-4 contactIcon"></i></a>
+                </div>
+            </div>
+        </section>
+        <div class="footer-copyright row">
+            <div class=" col s6 m4">Design <br> <a class="orange-text text-lighten-3 modal-trigger " href="#modal1">Carlos Velasco</a> </div>
+            <div class="col s6 m4">Sponsors <br> <a class="orange-text text-lighten-3 modal-trigger " href="#skane">Region Skåne</a> <br> <a class="orange-text text-lighten-3 modal-trigger " href="#lansstyrelsen">Lansstyrelsen Skåne</a> </div>
+        </div>
+    </footer>
+    <!--
+███    ███  ██████  ██████   █████  ██      ███████
+████  ████ ██    ██ ██   ██ ██   ██ ██      ██
+██ ████ ██ ██    ██ ██   ██ ███████ ██      ███████
+██  ██  ██ ██    ██ ██   ██ ██   ██ ██           ██
+██      ██  ██████  ██████  ██   ██ ███████ ███████
+-->
+    <div id="modal1" class="modal">
+        <div class="modal-content row center-align">
+            <div class="col s12">
+                <h2 class="blue-text text-darken-4">Carlos Velasco</h2>
+                <h4 class="flow-text">Interactive Design and Web Development</h4>
+            </div>
+            <div class="col s12"> <a href="mailto:Carlos@2ActiveDesign.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email medium"></i></a>
+                <a href="tel:460737298257" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Tel: 073-729 82 57"> <i class="mdi mdi-phone-classic medium"></i></a> <a href="https://www.linkedin.com/in/carlosevelasco" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="LinkedIn Profile"><i class="mdi mdi-linkedin medium"></i></a>
+                <a href="https://www.behance.net/2Active" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Behance Portfolio"> <i class="mdi mdi-behance	medium"></i> </a> <a href="https://github.com/xtreemze?tab=repositories" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Github Repositories"><i class="mdi mdi-github-box medium"></i></a>                </div>
+        </div>
+    </div>
+    <div id="skane" class="modal">
+        <div class="modal-content row center-align"> <img src="img/regionSkane.svg" alt="Region Skane" class="responsive-img" /> </div>
+    </div>
+    <div id="lansstyrelsen" class="modal">
+        <div class="modal-content row center-align"> <img src="img/lansstyrelsen.svg" alt="Lansstyrelsen Skane" class="responsive-img" /> </div>
+    </div>
+    <!--
+███████  ██████ ██████  ██ ██████  ████████
+██      ██      ██   ██ ██ ██   ██    ██
+███████ ██      ██████  ██ ██████     ██
+     ██ ██      ██   ██ ██ ██         ██
+███████  ██████ ██   ██ ██ ██         ██
+-->
+    <script src="js/init.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+/*.pin-top {
+	position: relative;
+}
+
+.pin-bottom {
+	position: relative;
+}*/
+
+.collapsible-body p {
+	padding: 0.8rem 2rem;
+}
+
+.poi {
+	font-size  : 1.7em;
+	font-weight: 500;
+	/*font-family: roboto;*/
+}
+
+.tabs .indicator {
+	background-color: white;
+
+}
+
+.tabs .tab a {
+	color: rgba(250,250,250,0.49);
+}
+
+footer.page-footer .footer-copyright {
+	line-height  : 18px;
+	height       : 250px;
+	padding-left : 30px;
+	padding-top  : 50px;
+	margin-bottom: 0;
+}
+
+.orangeBack {
+	background: #df622b;
+}
+
+.tabs a.active {
+	color: white;
+}
+
+.tabs {
+	background-color: #0d47a1;
+	white-space     : normal;
+}
+
+.tabs .tab {
+	padding-top: 0.8rem;
+
+	line-height: 1rem;
+}
+
+ul.tabs {}
+
+.tabs .tab a:hover {
+	color: hsla(358,0%,88%,1);
+}
+
+.sl5 {
+	width: 9rem;
+}
+
+.collection a.collection-item {
+	color: #0d47a1;
+}
+
+.pinned {
+	position  : fixed !important;
+	z-index   : 1;
+	width     : 100%;
+	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.navbar {
+	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.trail1 {
+	color: #df622b;
+}
+
+.collapsible-body.section.row {
+	margin-bottom: 0 !important;
+}
+
+.tabSpacer {
+	height: 48px;
+}
+
+.contactButtons {
+	padding-top: 1em;
+}
+
+.strong {
+	font-weight: 800;
+}
+/*
+██       ██████   ██████   ██████
+██      ██    ██ ██       ██    ██
+██      ██    ██ ██   ███ ██    ██
+██      ██    ██ ██    ██ ██    ██
+███████  ██████   ██████   ██████
+*/
+nav .brand-logo {
+	font-size     : 1.6rem;
+	text-transform: uppercase;
+	font-weight   : 600;
+}
+
+.logoImg {
+	-webkit-transition: transform 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition        : transform 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
+	margin-top        : 0.9rem;
+	margin-right      : 9px;
+	width             : 32px;
+
+}
+
+img.logoImg:hover {
+	transform: rotate(1turn);
+}
+
+.turn {
+	transform: rotate(0.5turn);
+}
+
+.margin-spacerTop {
+	margin-top: 1rem;
+}
+
+.pad {
+	padding-left : 2rem !important;
+	padding-right: 2rem !important;
+}
+
+.collapsible-body img.padBottom {
+	padding-bottom: 1rem;
+}
+
+.noBorder {
+	border: 0;
+}
+
+.map1 {
+	min-height: 60vh;
+}
+
+.map2 {
+	width: 120vh;
+}
+
+.map3 {
+	width: 120vh;
+}
+
+.scroll {
+	overflow-x: scroll;
+	min-height: 400px;
+}
+
+.loader {
+	height    : 100vh;
+	width     : 100vw;
+	background: #0d47a1;
+	position  : fixed;
+	z-index   : 50;
+}
+
+.centerLoader {
+	margin: 0 auto;
+}
+
+/*
+ ██████  ██████  ██      ██    ██ ███    ███ ███    ██ ███████
+██      ██    ██ ██      ██    ██ ████  ████ ████   ██ ██
+██      ██    ██ ██      ██    ██ ██ ████ ██ ██ ██  ██ ███████
+██      ██    ██ ██      ██    ██ ██  ██  ██ ██  ██ ██      ██
+ ██████  ██████  ███████  ██████  ██      ██ ██   ████ ███████
+*/
+.card .extendedInfo p {
+	margin: 0 0 1em;
+}
+@media only screen and (min-width: 601px) and (max-width:992px) {
+	.collapsible-body.section.row {
+		columns: 2;
+	}
+}
+@media only screen and (min-width: 601px) {
+	.extendedInfo {
+		columns   : 2;
+		column-gap: 3em;
+	}
+}
+@media only screen and (min-width: 993px) {
+	.collapsible-body.section.row {
+		columns: 3;
+	}
+
+}
+/*
+██   ██  █████  ███    ███ ██████  ██    ██ ██████   ██████  ███████ ██████
+██   ██ ██   ██ ████  ████ ██   ██ ██    ██ ██   ██ ██       ██      ██   ██
+███████ ███████ ██ ████ ██ ██████  ██    ██ ██████  ██   ███ █████   ██████
+██   ██ ██   ██ ██  ██  ██ ██   ██ ██    ██ ██   ██ ██    ██ ██      ██   ██
+██   ██ ██   ██ ██      ██ ██████   ██████  ██   ██  ██████  ███████ ██   ██
+*/
+a.bounceIn {
+	-webkit-transform: scale(0);
+	-moz-transform   : scale(0);
+	-ms-transform    : scale(0);
+	-o-transform     : scale(0);
+	transform        : scale(0);
+}
+
+.btn-floating {
+	-webkit-transition: transform 180ms cubic-bezier(0.23, 1, 0.32, 1);
+	transition        : transform 180ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fixed-action-btn .horizontal .click-to-toggle {
+	transform: translate3d(0, 18px, 0);
+}
+
+.nav-icon4 {
+	position          : relative;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition   : 0.5s ease-in-out;
+	-o-transition     : 0.5s ease-in-out;
+	transition        : 0.5s ease-in-out;
+	cursor            : pointer;
+	-webkit-transform : rotate(0deg) translate3d(0, 18px, 0) scale(0.48);
+	-o-transform      : rotate(0deg) translate3d(0, 18px, 0) scale(0.48);
+	-moz-transform    : rotate(0deg) translate3d(0, 18px, 0) scale(0.48);
+	transform         : rotate(0deg) translate3d(0, 18px, 0) scale(0.48);
+	/*will-change       : transform;*/
+}
+
+.nav-icon4 span {
+	display           : block;
+	position          : absolute;
+	height            : 9px;
+	width             : 100%;
+	background        : white;
+	border-radius     : 9px;
+	opacity           : 1;
+	-webkit-transform : rotate(0deg);
+	-moz-transform    : rotate(0deg);
+	-o-transform      : rotate(0deg);
+	transform         : rotate(0deg);
+	-webkit-transition: 0.25s ease-in-out;
+	-moz-transition   : 0.25s ease-in-out;
+	-o-transition     : 0.25s ease-in-out;
+	transition        : 0.25s ease-in-out;
+	/*will-change       : transform;*/
+}
+
+/* Icon 3 */
+.nav-icon4 span:nth-child(1) {
+	transform: translate3d(0,0,0) scale(1,1);
+}
+
+.nav-icon4 span:nth-child(2),
+.nav-icon4 span:nth-child(3) {
+	transform: translate3d(0, 18px, 0) scale(1, 1);
+}
+
+.nav-icon4 span:nth-child(4) {
+	transform: translate3d(0, 36px, 0) scale(1,1);
+}
+
+.nav-icon4.open span:nth-child(1) {
+	transform: translate3d(0,18px,0) scale(0,0);
+}
+
+.nav-icon4.open span:nth-child(2) {
+	-webkit-transform: translate3d(0, 18px, 0) rotate(45deg);
+	-moz-transform   : translate3d(0, 18px, 0) rotate(45deg);
+	-o-transform     : translate3d(0, 18px, 0) rotate(45deg);
+	transform        : translate3d(0, 18px, 0) rotate(45deg);
+}
+
+.nav-icon4.open span:nth-child(3) {
+	-webkit-transform: translate3d(0, 18px, 0) rotate(-45deg);
+	-moz-transform   : translate3d(0, 18px, 0) rotate(-45deg);
+	-o-transform     : translate3d(0, 18px, 0) rotate(-45deg);
+	transform        : translate3d(0, 18px, 0) rotate(-45deg);
+}
+
+.nav-icon4.open span:nth-child(4) {
+	transform: translate3d(0,18px,0) scale(0,0);
+}

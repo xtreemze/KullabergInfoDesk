@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Maps - Kullaberg</title>
+		<meta name="theme-color" content="#0d47a1">
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=0.0, maximum-scale=10.0">
+		<link rel="canonical" href="https://xtreemze.github.io/KullabergApp/maps.html" />
+		<!--
+ ██████ ███████ ███████
+██      ██      ██
+██      ███████ ███████
+██           ██      ██
+ ██████ ███████ ███████
+-->
+		<link rel="stylesheet" href="css/materialize.min.css">
+		<link rel="stylesheet" href="css/materialdesignicons.min.css">
+		 <link rel="stylesheet" href="css/master.min.css"> 
+		<!--
+███████  █████  ██    ██ ██  ██████  ██████  ███    ██
+██      ██   ██ ██    ██ ██ ██      ██    ██ ████   ██
+█████   ███████ ██    ██ ██ ██      ██    ██ ██ ██  ██
+██      ██   ██  ██  ██  ██ ██      ██    ██ ██  ██ ██
+██      ██   ██   ████   ██  ██████  ██████  ██   ████
+-->
+		<link rel="icon" type="image/png" href="favicon/favicon-32x32.png?v=eEEwEaEvl1" sizes="32x32">
+		<link rel="icon" type="image/png" href="favicon/favicon-194x194.png?v=eEEwEaEvl1" sizes="194x194">
+		<link rel="icon" type="image/png" href="favicon/favicon-96x96.png?v=eEEwEaEvl1" sizes="96x96">
+		<link rel="icon" type="image/png" href="favicon/android-chrome-192x192.png?v=eEEwEaEvl1" sizes="192x192">
+		<link rel="icon" type="image/png" href="favicon/favicon-16x16.png?v=eEEwEaEvl1" sizes="16x16">
+		<link rel="shortcut icon" href="favicon.ico?v=eEEwEaEvl1">
+
+		<!--
+		███████  ██████ ██████  ██ ██████  ████████
+		██      ██      ██   ██ ██ ██   ██    ██
+		███████ ██      ██████  ██ ██████     ██
+		     ██ ██      ██   ██ ██ ██         ██
+		███████  ██████ ██   ██ ██ ██         ██
+		-->
+		<script src="js/jquery.min.js" charset="utf-8"></script>
+		<script src="js/materialize.min.js" charset="utf-8"></script>
+		<script src="js/master.js"></script>
+		<!--<script src="bundle.js"></script>-->
+
+	</head>
+	<!--
+██████   ██████  ██████  ██    ██
+██   ██ ██    ██ ██   ██  ██  ██
+██████  ██    ██ ██   ██   ████
+██   ██ ██    ██ ██   ██    ██
+██████   ██████  ██████     ██
+-->
+
+	<body class="grey lighten-3">
+
+		<!--
+██       ██████   █████  ██████  ███████ ██████
+██      ██    ██ ██   ██ ██   ██ ██      ██   ██
+██      ██    ██ ███████ ██   ██ █████   ██████
+██      ██    ██ ██   ██ ██   ██ ██      ██   ██
+███████  ██████  ██   ██ ██████  ███████ ██   ██
+-->
+		<section class="loader valign-wrapper">
+			<div class="centerLoader">
+				<div class="preloader-wrapper big active valign center-align">
+					<div class="spinner-layer spinner-blue">
+						<div class="circle-clipper left">
+							<div class="circle"></div>
+						</div>
+						<div class="gap-patch">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-clipper right">
+							<div class="circle"></div>
+						</div>
+					</div>
+					<div class="spinner-layer spinner-red">
+						<div class="circle-clipper left">
+							<div class="circle"></div>
+						</div>
+						<div class="gap-patch">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-clipper right">
+							<div class="circle"></div>
+						</div>
+					</div>
+					<div class="spinner-layer spinner-yellow">
+						<div class="circle-clipper left">
+							<div class="circle"></div>
+						</div>
+						<div class="gap-patch">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-clipper right">
+							<div class="circle"></div>
+						</div>
+					</div>
+					<div class="spinner-layer spinner-green">
+						<div class="circle-clipper left">
+							<div class="circle"></div>
+						</div>
+						<div class="gap-patch">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-clipper right">
+							<div class="circle"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--
+███    ██  █████  ██    ██
+████   ██ ██   ██ ██    ██
+██ ██  ██ ███████ ██    ██
+██  ██ ██ ██   ██  ██  ██
+██   ████ ██   ██   ████
+-->
+		<header class="navbar z-depth-2">
+			<nav class="blue darken-4" role="navigation">
+				<div class="nav-wrapper">
+					<a class="brand-logo"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Kullaberg</span></a>
+					<ul class="right hide-on-med-and-down">
+						<li>
+							<a href="index.html">News</a>
+						</li>
+						<li>
+							<a href="poi.html">Points of Interest</a>
+						</li>
+						<li>
+							<a onclick="flashContact();">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!--
+████████  █████  ██████  ███████
+	 ██    ██   ██ ██   ██ ██
+	 ██    ███████ ██████  ███████
+	 ██    ██   ██ ██   ██      ██
+	 ██    ██   ██ ██████  ███████
+-->
+			<div class="tabSpacer">
+				<section class="tabs-wrapper">
+					<div class="col s12">
+						<ul class="tabs">
+							<li class="tab col s3">
+								<a href="#1" onclick="mapTabOperation();">Kullaberg Trail Map</a>
+							</li>
+							<li class="tab col s3">
+								<a href="#2" onclick="mapTabOperation();">Kullaleden InfoMap</a>
+							</li>
+							<li class="tab col s3">
+								<a href="#3" onclick="mapTabOperation();">Satellite View</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<!--
+███████  █████  ██████
+██      ██   ██ ██   ██
+█████   ███████ ██████
+██      ██   ██ ██   ██
+██      ██   ██ ██████
+-->
+			<div class="fixed-action-btn click-to-toggle">
+				<a class="btn-floating btn-large red darken-2 bounceIn">
+					<div class="nav-icon4"> <span></span> <span></span> <span></span><span></span> </div>
+				</a>
+				<ul>
+					<li>
+						<a class="btn-floating green darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="News" href="index.html"><i class="mdi mdi-newspaper"></i></a>
+					</li>
+					<li>
+						<a class="btn-floating orange darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Points of Interest" href="poi.html"><i class="mdi mdi-map-marker-radius"></i></a>
+					</li>
+					<li>
+						<a class="btn-floating yellow darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Contact Us" onclick="flashContact();"><i class="mdi mdi-phone"></i></a>
+					</li>
+				</ul>
+			</div>
+		</header> <br>
+<!--		
+███████  ██████ ██████  ██ ██████  ████████
+██      ██      ██   ██ ██ ██   ██    ██
+███████ ██      ██████  ██ ██████     ██
+     ██ ██      ██   ██ ██ ██         ██
+███████  ██████ ██   ██ ██ ██         ██-->
+
+		<script src="bundle.js"></script/>
+<!--
+███    ███  █████  ██ ███    ██
+████  ████ ██   ██ ██ ████   ██
+██ ████ ██ ███████ ██ ██ ██  ██
+██  ██  ██ ██   ██ ██ ██  ██ ██
+██      ██ ██   ██ ██ ██   ████
+-->
+		<main class="grey lighten-3">
+			<div id="1" class="scroll center-align"><img class="map1" src="img/kullabergKarta.svg" alt="Kullaberg Trail Map" /> </div>
+			<div id="2" class="scroll center-align"><img class="map2" src="img/t1/mapKullaleden.jpg" alt="Kullaleden Trail Map"></div>
+			<div id="3" class="scroll center-align"><img class="map3" src="img/t1/trail1mapZoom.jpg" alt="Satellite View"></div>
+		</main>
+		<!--
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+-->
+		<footer class="page-footer blue darken-4 white-text trails">
+			<section id="contact" class="row">
+				<div class="col s12 m6 l12">
+					<div class="col s8 m12 l4 pad"> <img src="img/kullabergsNaturum.svg" alt="Naturum Kullaberg" class="responsive-img" /></div>
+					<div class="col s12 m12 l8 margin-spacerTop pad">
+						<a href="mailto:naturum.kullaberg@lansstyrelsen.se?cc=carlos.velasco@lansstyrelsen.se" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: naturum.kullaberg@lansstyrelsen.se"><i class="mdi mdi-email medium grey-text text-lighten-4 contactIcon"></i></a>
+						<a href="tel:46042347056" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Tel: +46 (0)42 347 056"> <i class="mdi mdi-phone-classic medium grey-text text-lighten-4 contactIcon"></i></a>
+						<a href="http://www.kullabergsnatur.se/" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Website: KullabergsNatur.se"><i class="mdi mdi-web medium grey-text text-lighten-4 contactIcon"></i></a>
+						<a href="https://www.facebook.com/kullabergsnaturreservat/" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Facebook: Kullabergs Naturreservat"><i class="mdi mdi-facebook-box medium grey-text text-lighten-4 contactIcon"></i></a>
+						<a href="https://www.instagram.com/kullabergsnaturreservat/" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Instagram: naturum Kullaberg"><i class="mdi mdi-instagram medium grey-text text-lighten-4 contactIcon"></i></a>
+					</div>
+				</div>
+				<div class="spacer"></div>
+			</section>
+			<div class="footer-copyright row">
+				<div class=" col s6 m4">Design <br>
+					<a class="orange-text text-lighten-3 modal-trigger " href="#modal1">Carlos Velasco</a>
+				</div>
+				<div class="col s6 m4">Sponsors <br>
+					<a class="orange-text text-lighten-3 modal-trigger " href="#skane">Region Skåne</a> <br>
+					<a class="orange-text text-lighten-3 modal-trigger " href="#lansstyrelsen">Lansstyrelsen Skåne</a>
+				</div>
+			</div>
+		</footer>
+		<!--
+███    ███  ██████  ██████   █████  ██
+████  ████ ██    ██ ██   ██ ██   ██ ██
+██ ████ ██ ██    ██ ██   ██ ███████ ██
+██  ██  ██ ██    ██ ██   ██ ██   ██ ██
+██      ██  ██████  ██████  ██   ██ ███████
+-->
+		<div id="modal1" class="modal">
+			<div class="modal-content row center-align">
+				<div class="col s12">
+					<h2 class="blue-text text-darken-4">Carlos Velasco</h2>
+					<h4 class="flow-text">Interactive Design and Web Development</h4> </div>
+				<div class="col s12">
+					<a href="mailto:Carlos@2ActiveDesign.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email medium"></i></a>
+					<a href="tel:460737298257" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Tel: 073-729 82 57"> <i class="mdi mdi-phone-classic medium"></i></a>
+					<a href="https://www.linkedin.com/in/carlosevelasco" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="LinkedIn Profile"><i class="mdi mdi-linkedin medium"></i></a>
+					<a href="https://www.behance.net/2Active" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Behance Portfolio">
+						<i class="mdi mdi-behance
+										medium"></i>
+					</a>
+					<a href="https://github.com/xtreemze?tab=repositories" class="tooltipped onlineOnly" data-position="bottom" data-delay="50" data-tooltip="Github Repositories"><i class="mdi mdi-github-box medium"></i></a>
+				</div>
+			</div>
+		</div>
+		<!--
+███████  ██████ ██████  ██ ██████  ████████
+██      ██      ██   ██ ██ ██   ██    ██
+███████ ██      ██████  ██ ██████     ██
+     ██ ██      ██   ██ ██ ██         ██
+███████  ██████ ██   ██ ██ ██         ██
+-->
+		<script src="js/init2.js"></script>
+	</body>
+
+</html>

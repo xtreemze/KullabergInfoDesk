@@ -1,0 +1,42 @@
+{
+  "name": "kullabergapp",
+  "version": "1.0.0",
+  "description": "Information for Kullaberg",
+  "main": "index.html",
+  "scripts": {
+    "test": "none",
+    "dev": "webpack-dev-server --progress --colors --host 0.0.0.0 --port 8080 --inline --env=dev --profile --open",
+    "export": "webpack --progress --env=dev --profile --colors",
+    "exportw": "webpack --progress --colors --env=dev --profile --watch",
+    "exportp": "webpack --progress --colors --env=prod --profile -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtreemze/KullabergApp.git"
+  },
+  "author": "Carlos Velasco",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/xtreemze/KullabergApp/issues"
+  },
+  "homepage": "https://github.com/xtreemze/KullabergApp#readme",
+  "devDependencies": {
+    "css-loader": "^0.26.4",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-plugin-import": "^2.2.0",
+    "extract-loader": "^0.1.0",
+    "file-loader": "^0.10.1",
+    "html-loader": "^0.4.5",
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  },
+  "dependencies": {
+    "html-minifier-webpack-plugin": "^1.0.1",
+    "imagemin-webpack-plugin": "^1.4.4",
+    "offline-plugin": "^4.6.1",
+    "webpack-closure-compiler": "^2.1.4"
+  }
+}

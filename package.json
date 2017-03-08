@@ -1,7 +1,7 @@
 {
-  "name": "kullabergapp",
+  "name": "kullaberginfodesk",
   "version": "1.0.0",
-  "description": "Information for Kullaberg",
+  "description": "Third Party Information for Kullaberg",
   "main": "index.html",
   "scripts": {
     "test": "none",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xtreemze/KullabergApp.git"
+    "url": "git+https://github.com/xtreemze/KullabergInfoDesk.git"
   },
   "author": "Carlos Velasco",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/xtreemze/KullabergApp/issues"
+    "url": "https://github.com/xtreemze/KullabergInfoDesk/issues"
   },
-  "homepage": "https://github.com/xtreemze/KullabergApp#readme",
+  "homepage": "https://github.com/xtreemze/KullabergInfoDesk#readme",
   "devDependencies": {
     "css-loader": "^0.26.4",
     "eslint": "^3.16.1",
@@ -31,11 +31,12 @@
     "style-loader": "^0.13.2",
     "url-loader": "^0.5.8",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
     "html-minifier-webpack-plugin": "^1.0.1",
     "imagemin-webpack-plugin": "^1.4.4",
+    "material-components-web": "^0.6.0",
     "offline-plugin": "^4.6.1",
     "webpack-closure-compiler": "^2.1.4"
   }

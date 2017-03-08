@@ -1,3 +1,6 @@
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const HtmlMinifierPlugin = require('html-minifier-webpack-plugin');
+const ClosureCompilerPlugin = require('webpack-closure-compiler');
 module.exports = function d(env) {
   return {
     entry: './entry.js',
@@ -9,12 +12,6 @@ module.exports = function d(env) {
       rules: [{
         test: /indexB.html$/,
         loaders: ['file-loader?name=index.[ext]?[hash]!', 'extract-loader', 'html-loader'],
-      }, {
-        test: /mapsB.html$/,
-        loaders: ['file-loader?name=maps.[ext]?[hash]!', 'extract-loader', 'html-loader'],
-      }, {
-        test: /poiB.html$/,
-        loaders: ['file-loader?name=poi.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
@@ -31,5 +28,23 @@ module.exports = function d(env) {
         }],
       }],
     },
+    //     plugins: [
+    //   new ImageminPlugin({
+    //     pngquant: {
+    //       quality: '95-100',
+    //     },
+    //   }),
+    //   // ... other plugins
+    //   new HtmlMinifierPlugin({}),
+    //   new ClosureCompilerPlugin({
+    //     compiler: {
+    //       language_in: 'ECMASCRIPT6',
+    //       language_out: 'ECMASCRIPT5',
+    //       compilation_level: 'ADVANCED',
+    //     },
+    //     concurrency: 3,
+    //   }),
+
+    // ]
   };
 };

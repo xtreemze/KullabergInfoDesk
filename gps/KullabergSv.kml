@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Kullaberg (Sv)</name>
+    <description>carlos@2activedesign.com</description>
+    <NetworkLink>
+      <name>Kullaberg (Sv)</name>
+      <Link>
+        <href><![CDATA[http://www.google.com/maps/d/u/1/kml?forcekml=1&mid=10IJQKK7eBWFNJkw5mK7-oyR5KX4]]></href>
+      </Link>
+    </NetworkLink>
+  </Document>
+</kml>

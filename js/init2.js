@@ -1,6 +1,7 @@
 (function jQ2($) {
   // $('.scrollspy')
   //   .scrollSpy();
+  // $('ul.tabs').tabs({ swipeable: true, responsiveThreshold: 2000 });
   $('.btn-floating.btn-large.red')
     .click(function hamburger() {
       $('.nav-icon4')
@@ -13,8 +14,8 @@
         .top,
       // offset: $('.nav-wrapper').height(),
     });
-  $('.modal-trigger')
-    .leanModal();
+  $('.modal')
+    .modal();
   if (!window.navigator.onLine) {
     $('.onlineOnly')
       .hide();
@@ -26,12 +27,21 @@
 $(window)
   .load(function start3() {
     // Animate loader to fade out
-    $('.loader')
-      .finish()
-      .fadeOut(600, 'easeOutSine', function present() {
-        $('.logoImg')
-          .removeClass('turn');
-        $('.btn-floating')
-          .removeClass('bounceIn');
-      });
+    $('.logoImg')
+      .delay(100)
+      .removeClass('turn');
+    $('.btn-floating')
+      .delay(120)
+      .removeClass('scale-out');
+
+
+    // $('.loader')
+    //   .finish()
+    //   .delay(10)
+    //   .fadeOut(0, 'linear', function present() {
+    //     $('.logoImg')
+    //       .delay(100).removeClass('turn');
+    //     $('.btn-floating')
+    //       .delay(120).removeClass('scale-out');
+    //   });
   });

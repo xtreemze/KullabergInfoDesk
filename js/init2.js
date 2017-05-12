@@ -34,7 +34,6 @@ $(window)
       .delay(120)
       .removeClass('scale-out');
 
-
     // $('.loader')
     //   .finish()
     //   .delay(10)

@@ -158,8 +158,13 @@
                 $('.btn-floating')
                     .delay(120)
                     .removeClass('scale-out');
-
+                var bodyHeight = $(window).height() - $("footer").height()
+                $(".embeded").height(bodyHeight - 25);
             });
+        $(window).resize(function() {
+            var bodyHeight = $(window).height() - $("footer").height()
+            $(".embeded").height(bodyHeight - 25);
+        });
 
     </script>
 </body>

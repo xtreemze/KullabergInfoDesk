@@ -104,8 +104,9 @@
     <footer class="page-footer blue darken-4 white-text trails footerAbsolute">
         <div class="footer-copyright row">
             <div class="col s12">
-                <div class="col s6 m4 l2">Design <br> <a class="orange-text text-lighten-3">Carlos Velasco</a> </div>
-                <div class="col s6 m4 l2">Sponsors <br> <a class="orange-text text-lighten-3 modal-trigger" href="#skane">Region Skåne</a> <br> <a class="orange-text text-lighten-3 modal-trigger" href="#lansstyrelsen">Lansstyrelsen Skåne</a> </div>
+                <div class="col s6 m4 l2">Design <br> <a class="orange-text text-lighten-3 modal-trigger" href="#carlos">Carlos Velasco</a> </div>
+                <div class="col s6 m4 l2">Sponsors <br> <a class="orange-text text-lighten-3 modal-trigger" href="#skane">Region Skåne</a> <br>
+                    <a class="orange-text text-lighten-3 modal-trigger" href="#lansstyrelsen">Lansstyrelsen Skåne</a> </div>
                 <div class="col s6 m4 l2">Language <br> <a class="orange-text text-lighten-3" href="embedSv.html">Svenska</a> <br> <a class="orange-text text-lighten-3">English</a></div>
             </div>
         </div>
@@ -122,6 +123,17 @@
     </div>
     <div id="lansstyrelsen" class="modal">
         <div class="modal-content row center-align"> <img src="img/lansstyrelsen.svg" alt="Lansstyrelsen Skane" class="responsive-img" /> </div>
+    </div>
+    <div id="modal1" class="modal">
+        <div class="modal-content row center-align">
+            <div class="col s12">
+                <h2 class="blue-text text-darken-4">Carlos Velasco</h2>
+                <h4 class="flow-text">Front-End JavaScript Application Developer</h4>
+            </div>
+            <div class="col s12">
+                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email medium"></i></a>
+            </div>
+        </div>
     </div>
     <!--
 ███████  ██████ ██████  ██ ██████  ████████
@@ -181,7 +193,7 @@
 
         $(document).keydown(function(e) { //when any key is pressed
 
-            if (e.keyCode == 27 || e.keyCode == 18 || e.keyCode == 17 || e.keyCode == 16 || e.keyCode == 91 || e.keyCode == 92  ) { // if the key is CTRL or ALT
+            if (e.keyCode == 27 || e.keyCode == 18 || e.keyCode == 17 || e.keyCode == 16 || e.keyCode == 91 || e.keyCode == 92) { // if the key is CTRL or ALT
 
                 e.preventDefault();
             }

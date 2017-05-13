@@ -89,8 +89,6 @@ footer.page-footer .footer-copyright {
     line-height: 1rem;
 }
 
-ul.tabs {}
-
 .tabs .tab a:hover {
     color: hsla(358, 0%, 88%, 1);
 }

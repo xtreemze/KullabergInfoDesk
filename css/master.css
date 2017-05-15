@@ -1,6 +1,10 @@
 .content {
-    z-index: 20;
+    z-index: 5;
     position: fixed;
+}
+
+.modal {
+    z-index: 20;
 }
 
 .primary {

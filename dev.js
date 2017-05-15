@@ -16,23 +16,8 @@ module.exports = function d(env) {
         test: /embedSvB.html$/,
         loaders: ['file-loader?name=embedSv.[ext]', 'extract-loader', 'html-loader'],
       }, {
-        test: /mapsB.html$/,
-        loaders: ['file-loader?name=maps.[ext]', 'extract-loader', 'html-loader'],
-      }, {
-        test: /newsB.html$/,
-        loaders: ['file-loader?name=news.[ext]', 'extract-loader', 'html-loader'],
-      }, {
-        test: /poiB.html$/,
-        loaders: ['file-loader?name=poi.[ext]', 'extract-loader', 'html-loader'],
-      }, {
-        test: /mapsBSv.html$/,
-        loaders: ['file-loader?name=mapsSv.[ext]', 'extract-loader', 'html-loader'],
-      }, {
-        test: /newsBSv.html$/,
-        loaders: ['file-loader?name=newsSv.[ext]', 'extract-loader', 'html-loader'],
-      }, {
-        test: /poiBSv.html$/,
-        loaders: ['file-loader?name=poiSv.[ext]', 'extract-loader', 'html-loader'],
+        test: /iframeB.html$/,
+        loaders: ['file-loader?name=iframe.[ext]', 'extract-loader', 'html-loader'],
       }, {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],

@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>Kullaberg</title>
+    <title>Kullaberg InfoDesk</title>
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=0.0, maximum-scale=10.0">
     <link rel="canonical" href="https://xtreemze.github.io/KullabergInfoDesk/embedEn.html" />
     <meta http-equiv="refresh" content="300">
@@ -16,7 +16,7 @@
 -->
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="css/master.min.css">
+    <!--<link rel="stylesheet" href="css/master.css">-->
     <!--
 ███████  █████  ██    ██ ██  ██████  ██████  ███    ██
 ██      ██   ██ ██    ██ ██ ██      ██    ██ ████   ██
@@ -44,8 +44,7 @@
 		-->
     <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
     <script src="js/materialize.min.js" charset="utf-8"></script>
-    <script src="js/master.min.js"></script>
-    <!--<script src="bundle.js"></script>-->
+    <!--<script src="js/master.min.js"></script>-->
 </head>
 <!--
 ██████   ██████  ██████  ██    ██
@@ -55,7 +54,7 @@
 ██████   ██████  ██████     ██
 -->
 
-<body class="grey lighten-3 noScroll">
+<body class="blue darken-4">
     <!--
 ███    ██  █████  ██    ██
 ████   ██ ██   ██ ██    ██
@@ -63,20 +62,13 @@
 ██  ██ ██ ██   ██  ██  ██
 ██   ████ ██   ██   ████
 -->
-    <header class="navbar z-depth-2 embedHead">
+    <header class="navbar z-depth-2">
         <nav class="blue darken-4" role="navigation">
             <div class="nav-wrapper">
-                <a class="brand-logo" href="embedEn.html"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Kullaberg</span></a>
+                <a class="brand-logo" href="embedEn.html"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Kullabergs InfoDesk</span></a>
             </div>
         </nav>
-        <!--
-███████  █████  ██████
-██      ██   ██ ██   ██
-█████   ███████ ██████
-██      ██   ██ ██   ██
-██      ██   ██ ██████
--->
-    </header> <br>
+    </header>
     <!--		
 ███████  ██████ ██████  ██ ██████  ████████
 ██      ██      ██   ██ ██ ██   ██    ██
@@ -91,50 +83,11 @@
 ██  ██  ██ ██   ██ ██ ██  ██ ██
 ██      ██ ██   ██ ██ ██   ████
 -->
-    <main class="grey lighten-3">
-        <iframe class="embeded" src="https://www.google.com/maps/d/u/1/embed?mid=1mRJxLa5HYcKXzxWqTZAPLmuSOL0"></iframe>
+    <main class="blue darken-4">
+        <iframe id="iframe1" title="iframe" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="iframe.html">
+</iframe>
     </main>
-    <!--
-███████  ██████   ██████  ████████ ███████ ██████
-██      ██    ██ ██    ██    ██    ██      ██   ██
-█████   ██    ██ ██    ██    ██    █████   ██████
-██      ██    ██ ██    ██    ██    ██      ██   ██
-██       ██████   ██████     ██    ███████ ██   ██
--->
-    <footer class="page-footer blue darken-4 white-text trails footerAbsolute">
-        <div class="footer-copyright row">
-            <div class="col s12">
-                <div class="col s6 m4 l2">Design <br> <a class="orange-text text-lighten-3 modal-trigger" href="#carlos">Carlos Velasco</a> </div>
-                <div class="col s6 m4 l2">Sponsors <br> <a class="orange-text text-lighten-3 modal-trigger" href="#skane">Region Skåne</a> <br>
-                    <a class="orange-text text-lighten-3 modal-trigger" href="#lansstyrelsen">Lansstyrelsen Skåne</a> </div>
-                <div class="col s6 m4 l2">Language <br> <a class="orange-text text-lighten-3" href="embedSv.html">Svenska</a> <br> <a class="orange-text text-lighten-3">English</a></div>
-            </div>
-        </div>
-    </footer>
-    <!--
-███    ███  ██████  ██████   █████  ██
-████  ████ ██    ██ ██   ██ ██   ██ ██
-██ ████ ██ ██    ██ ██   ██ ███████ ██
-██  ██  ██ ██    ██ ██   ██ ██   ██ ██
-██      ██  ██████  ██████  ██   ██ ███████
--->
-    <div id="skane" class="modal">
-        <div class="modal-content row center-align"> <img src="img/regionSkane.svg" alt="Region Skane" class="responsive-img" /> </div>
-    </div>
-    <div id="lansstyrelsen" class="modal">
-        <div class="modal-content row center-align"> <img src="img/lansstyrelsen.svg" alt="Lansstyrelsen Skane" class="responsive-img" /> </div>
-    </div>
-    <div id="carlos" class="modal">
-        <div class="modal-content row center-align">
-            <div class="col s12">
-                <h2 class="blue-text text-darken-4">Carlos Velasco</h2>
-                <h4 class="flow-text">Front-End JavaScript Application Developer</h4>
-            </div>
-            <div class="col s12">
-                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email medium"></i></a>
-            </div>
-        </div>
-    </div>
+
     <!--
 ███████  ██████ ██████  ██ ██████  ████████
 ██      ██      ██   ██ ██ ██   ██    ██
@@ -143,61 +96,17 @@
 ███████  ██████ ██   ██ ██ ██         ██
 -->
     <script>
-        (function jQ3($) {
-
-            $('.btn-floating.btn-large.red')
-                .click(function hamburger() {
-                    $('.nav-icon4')
-                        .toggleClass('open');
-                });
-
-            $('.modal')
-                .modal();
-            if (!window.navigator.onLine) {
-                $('.onlineOnly')
-                    .hide();
-                hiddenContact = true;
-            }
-            // end of document ready
-        }(jQuery));
-        // end of jQuery name space
+        var resizeBody = function() {
+            var bodyHeight = $(window).height() - $("header").height()
+            $("#iframe1").height(bodyHeight - 26).width("100%");
+        };
         $(document)
-            .ready(function start3() {
-                // Animate loader to fade out
-                $('.logoImg')
-                    .delay(100)
-                    .removeClass('turn');
-                $('.btn-floating')
-                    .delay(120)
-                    .removeClass('scale-out');
-                var bodyHeight = $(window).height() - $("footer").height()
-                $(".embeded").height(bodyHeight - 25);
+            .ready(function() {
+                resizeBody();
             });
         $(window).resize(function() {
-            var bodyHeight = $(window).height() - $("footer").height()
-            $(".embeded").height(bodyHeight - 25);
+            resizeBody();
         });
-        /*
-        8888888b.  d8b                   888      888               888    d8P                    888                                    888                                         
-        888  "Y88b Y8P                   888      888               888   d8P                     888                                    888                                         
-        888    888                       888      888               888  d8P                      888                                    888                                         
-        888    888 888 .d8888b   8888b.  88888b.  888  .d88b.       888d88K      .d88b.  888  888 88888b.   .d88b.   8888b.  888d888 .d88888                                         
-        888    888 888 88K          "88b 888 "88b 888 d8P  Y8b      8888888b    d8P  Y8b 888  888 888 "88b d88""88b     "88b 888P"  d88" 888                                         
-        888    888 888 "Y8888b. .d888888 888  888 888 88888888      888  Y88b   88888888 888  888 888  888 888  888 .d888888 888    888  888                                         
-        888  .d88P 888      X88 888  888 888 d88P 888 Y8b.          888   Y88b  Y8b.     Y88b 888 888 d88P Y88..88P 888  888 888    Y88b 888                                         
-        8888888P"  888  88888P' "Y888888 88888P"  888  "Y8888       888    Y88b  "Y8888   "Y88888 88888P"   "Y88P"  "Y888888 888     "Y88888                                         
-                                                                                              888                                                                                    
-                                                                                         Y8b d88P                                                                                    
-                                                                                          "Y88P"                                                                                     
-         */
-
-        $(document).keydown(function(e) { //when any key is pressed
-
-            if (e.keyCode == 27 || e.keyCode == 18 || e.keyCode == 17 || e.keyCode == 16 || e.keyCode == 91 || e.keyCode == 92) { // if the key is CTRL or ALT
-                e.stopPropagation();
-                e.preventDefault();
-            }
-        }); // do nothing
 
     </script>
 </body>

@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>Kullaberg</title>
+    <title>Kullaberg InfoDesk</title>
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=0.0, maximum-scale=10.0">
     <link rel="canonical" href="https://xtreemze.github.io/KullabergInfoDesk/index.html" />
     <!--
@@ -113,7 +113,7 @@
 		     ██ ██      ██   ██ ██ ██         ██
 		███████  ██████ ██   ██ ██ ██         ██
 		-->
-    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
     <script src="js/materialize.min.js" charset="utf-8"></script>
     <script src="bundle.js"></script>
     <script>
@@ -128,11 +128,11 @@
 
         window.onload = function() {
             if (navigator.language && navigator.language[0] !== "s" && navigator.language[1] !== "v") {
-                window.location.replace("./maps.html");
+                window.location.replace("./embedEn.html");
             } else if (navigator.language) {
-                window.location.replace("./mapsSv.html");
+                window.location.replace("./embedSv.html");
             } else {
-                window.location.replace("./maps.html");
+                window.location.replace("./embedEn.html");
             }
         }
 

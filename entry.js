@@ -1,16 +1,9 @@
 require('./indexB.html');
-require('./mapsB.html');
-require('./newsB.html');
-require('./poiB.html');
-require('./mapsBSv.html');
-require('./newsBSv.html');
-require('./poiBSv.html');
 require('./embedEnB.html');
 require('./embedSvB.html');
-// require('./js/jquery.min.js');
-// require('./js/materialize.min.js');
-// require('./js/master.js');
-// require('offline-plugin/runtime').install();
+require('./iframeB.html');
+require('./css/master.css');
+
 
 // 888     888               888          888                     
 // 888     888               888          888                     

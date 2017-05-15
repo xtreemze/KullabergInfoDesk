@@ -124,7 +124,7 @@
     <div id="lansstyrelsen" class="modal">
         <div class="modal-content row center-align"> <img src="img/lansstyrelsen.svg" alt="Lansstyrelsen Skane" class="responsive-img" /> </div>
     </div>
-    <div id="modal1" class="modal">
+    <div id="carlos" class="modal">
         <div class="modal-content row center-align">
             <div class="col s12">
                 <h2 class="blue-text text-darken-4">Carlos Velasco</h2>
@@ -194,7 +194,7 @@
         $(document).keydown(function(e) { //when any key is pressed
 
             if (e.keyCode == 27 || e.keyCode == 18 || e.keyCode == 17 || e.keyCode == 16 || e.keyCode == 91 || e.keyCode == 92) { // if the key is CTRL or ALT
-
+                e.stopPropagation();
                 e.preventDefault();
             }
         }); // do nothing

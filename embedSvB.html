@@ -122,17 +122,17 @@
         <div id="lansstyrelsen" class="modal">
             <div class="modal-content row center-align"> <img src="img/lansstyrelsen.svg" alt="Lansstyrelsen Skane" class="responsive-img" /> </div>
         </div>
-            <div id="carlos" class="modal">
-        <div class="modal-content row center-align">
-            <div class="col s12">
-                <h2 class="blue-text text-darken-4">Carlos Velasco</h2>
-                <h4 class="flow-text">Front-End JavaScript Application Developer</h4>
-            </div>
-            <div class="col s12">
-                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email medium"></i></a>
+        <div id="carlos" class="modal">
+            <div class="modal-content row center-align">
+                <div class="col s12">
+                    <h2 class="blue-text text-darken-4">Carlos Velasco</h2>
+                    <h4 class="flow-text">Front-End JavaScript Application Developer</h4>
+                </div>
+                <div class="col s12">
+                    <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email medium"></i></a>
+                </div>
             </div>
         </div>
-    </div>
         <!--
 ███████  ██████ ██████  ██ ██████  ████████
 ██      ██      ██   ██ ██ ██   ██    ██
@@ -175,27 +175,29 @@
                 var bodyHeight = $(window).height() - $("footer").height()
                 $(".embeded").height(bodyHeight - 25);
             });
-       /*
-        8888888b.  d8b                   888      888               888    d8P                    888                                    888                                         
-        888  "Y88b Y8P                   888      888               888   d8P                     888                                    888                                         
-        888    888                       888      888               888  d8P                      888                                    888                                         
-        888    888 888 .d8888b   8888b.  88888b.  888  .d88b.       888d88K      .d88b.  888  888 88888b.   .d88b.   8888b.  888d888 .d88888                                         
-        888    888 888 88K          "88b 888 "88b 888 d8P  Y8b      8888888b    d8P  Y8b 888  888 888 "88b d88""88b     "88b 888P"  d88" 888                                         
-        888    888 888 "Y8888b. .d888888 888  888 888 88888888      888  Y88b   88888888 888  888 888  888 888  888 .d888888 888    888  888                                         
-        888  .d88P 888      X88 888  888 888 d88P 888 Y8b.          888   Y88b  Y8b.     Y88b 888 888 d88P Y88..88P 888  888 888    Y88b 888                                         
-        8888888P"  888  88888P' "Y888888 88888P"  888  "Y8888       888    Y88b  "Y8888   "Y88888 88888P"   "Y88P"  "Y888888 888     "Y88888                                         
-                                                                                              888                                                                                    
-                                                                                         Y8b d88P                                                                                    
-                                                                                          "Y88P"                                                                                     
-         */
+            /*
+             8888888b.  d8b                   888      888               888    d8P                    888                                    888                                         
+             888  "Y88b Y8P                   888      888               888   d8P                     888                                    888                                         
+             888    888                       888      888               888  d8P                      888                                    888                                         
+             888    888 888 .d8888b   8888b.  88888b.  888  .d88b.       888d88K      .d88b.  888  888 88888b.   .d88b.   8888b.  888d888 .d88888                                         
+             888    888 888 88K          "88b 888 "88b 888 d8P  Y8b      8888888b    d8P  Y8b 888  888 888 "88b d88""88b     "88b 888P"  d88" 888                                         
+             888    888 888 "Y8888b. .d888888 888  888 888 88888888      888  Y88b   88888888 888  888 888  888 888  888 .d888888 888    888  888                                         
+             888  .d88P 888      X88 888  888 888 d88P 888 Y8b.          888   Y88b  Y8b.     Y88b 888 888 d88P Y88..88P 888  888 888    Y88b 888                                         
+             8888888P"  888  88888P' "Y888888 88888P"  888  "Y8888       888    Y88b  "Y8888   "Y88888 88888P"   "Y88P"  "Y888888 888     "Y88888                                         
+                                                                                                   888                                                                                    
+                                                                                              Y8b d88P                                                                                    
+                                                                                               "Y88P"                                                                                     
+              */
 
-        $(document).keydown(function(e) { //when any key is pressed
+            $(document).keydown(function(e) { //when any key is pressed
 
-            if (e.keyCode == 27 || e.keyCode == 18 || e.keyCode == 17 || e.keyCode == 16 || e.keyCode == 91 || e.keyCode == 92  ) { // if the key is CTRL or ALT
+                if (e.keyCode == 27 || e.keyCode == 18 || e.keyCode == 17 || e.keyCode == 16 || e.keyCode == 91 || e.keyCode == 92) { // if the key is CTRL or ALT
 
-                e.preventDefault();
-            }
-        }); // do nothing
+                    e.stopPropagation();
+                    e.preventDefault();
+                }
+            }); // do nothing
+
         </script>
     </body>
 

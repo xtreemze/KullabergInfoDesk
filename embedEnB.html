@@ -66,6 +66,21 @@
         <nav class="blue darken-4" role="navigation">
             <div class="nav-wrapper">
                 <a class="brand-logo" href="embedEn.html"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Kullabergs InfoDesk</span></a>
+                <div class="fixed-action-btn toolbar">
+                    <a class="btn-floating btn-large blue darken-4 modal-trigger" href="#empty">
+                        <i class="mdi mdi-information"></i>
+                    </a>
+                    <ul>
+                        <li><a class="blue darken-4">Design:</a></li>
+                        <li><a class="blue darken-4 modal-trigger" href="#carlos" onclick="$('#empty').modal('close');">Carlos Velasco</a></li>
+                        <li><a class="blue darken-4">Sponsors:</a></li>
+                        <li><a class="blue darken-4 modal-trigger" href="#lansstyrelsen" onclick="$('#empty').modal('close');">Lansstyrelsen Skåne</a></li>
+                        <li><a class="blue darken-4 modal-trigger" href="#skane" onclick="$('#empty').modal('close');">Region Skåne</a></li>
+                        <li><a class="blue darken-4">Language:</a></li>
+                        <li><a href="embedEn.html" class="blue darken-4" onclick="$('#empty').modal('close');">English</a></li>
+                        <li><a href="embedSv.html" class="blue darken-4" onclick="$('#empty').modal('close');">Svenska</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -84,10 +99,36 @@
 ██      ██ ██   ██ ██ ██   ████
 -->
     <main class="blue darken-4">
-        <iframe id="iframe1" title="iframeEn" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="iframeEn.html">
+        <iframe sandbox="allow-scripts allow-same-origin" id="iframe1" title="iframeEn" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="iframeEn.html">
 </iframe>
+        <!--
+███    ███  ██████  ██████   █████  ██
+████  ████ ██    ██ ██   ██ ██   ██ ██
+██ ████ ██ ██    ██ ██   ██ ███████ ██
+██  ██  ██ ██    ██ ██   ██ ██   ██ ██
+██      ██  ██████  ██████  ██   ██ ███████
+-->
+        <div id="skane" class="modal">
+            <div class="modal-content row center-align"> <img src="img/regionSkane.svg" alt="Region Skane" class="responsive-img" /> </div>
+        </div>
+        <div id="empty" class="modal">
+            
+        </div>
+        <div id="lansstyrelsen" class="modal">
+            <div class="modal-content row center-align"> <img src="img/lansstyrelsen.svg" alt="Lansstyrelsen Skane" class="responsive-img" /> </div>
+        </div>
+        <div id="carlos" class="modal">
+            <div class="modal-content row center-align">
+                <div class="col s12">
+                    <h2 class="blue-text text-darken-4">Carlos Velasco</h2>
+                    <h4 class="flow-text">Front-End JavaScript Application Developer</h4>
+                </div>
+                <div class="col s12">
+                    <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email medium"></i></a>
+                </div>
+            </div>
+        </div>
     </main>
-
     <!--
 ███████  ██████ ██████  ██ ██████  ████████
 ██      ██      ██   ██ ██ ██   ██    ██
@@ -98,11 +139,13 @@
     <script>
         var resizeBody = function() {
             var bodyHeight = $(window).height() - $("header").height()
-            $("#iframe1").height(bodyHeight - 26).width("100%");
+            $("#iframe1").height(bodyHeight - 10).width("100%");
         };
         $(document)
             .ready(function() {
                 resizeBody();
+                $('.modal').modal();
+
             });
         $(window).resize(function() {
             resizeBody();

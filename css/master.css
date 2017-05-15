@@ -1,6 +1,7 @@
 .content {
     z-index: 5;
     position: fixed;
+    bottom:0;
 }
 
 .modal {
@@ -34,7 +35,7 @@
                               "Y88P"                                                 
 */
 
-body {
+/*body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -43,7 +44,11 @@ body {
 main {
     flex: 1 0 auto;
 }
+*/
 
+.toolbar{
+    z-index: 2000;
+}
 footer.page-footer {
     line-height: 18px;
     padding-left: 40vw;

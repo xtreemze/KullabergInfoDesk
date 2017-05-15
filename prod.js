@@ -22,8 +22,11 @@ module.exports = function e(env) {
         test: /embedSvB.html$/,
         loaders: ['file-loader?name=embedSv.[ext]', 'extract-loader', 'html-loader'],
       }, {
-        test: /iframeB.html$/,
-        loaders: ['file-loader?name=iframe.[ext]', 'extract-loader', 'html-loader'],
+        test: /iframeEnB.html$/,
+        loaders: ['file-loader?name=iframeEn.[ext]', 'extract-loader', 'html-loader'],
+      }, {
+        test: /iframeSvB.html$/,
+        loaders: ['file-loader?name=iframeSv.[ext]', 'extract-loader', 'html-loader'],
       }, {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
@@ -64,7 +67,7 @@ module.exports = function e(env) {
         concurrency: 3,
       }),
       new OfflinePlugin({
-        externals: ['./css/materialize.min.css', './css/master.min.css', './css/materialdesignicons.min.css', './fonts/roboto/Roboto-Medium.woff', './fonts/roboto/Roboto-Regular.woff', './fonts/roboto/Roboto-Light.woff', './fonts/roboto/Roboto-Thin.woff', './fonts/roboto/Roboto-Bold.woff', './fonts/roboto/Roboto-Medium.woff2', './fonts/roboto/Roboto-Regular.woff2', './fonts/roboto/Roboto-Light.woff2', './fonts/roboto/Roboto-Thin.woff2', './fonts/roboto/Roboto-Bold.woff2', './fonts/materialdesignicons-webfont.woff', './fonts/materialdesignicons-webfont.woff2', './android-chrome-192x192.png', './android-chrome-512x512.png', './favicon-32x32.png', './favicon-16x16.png', './index.html', './js/master.min.js', './js/init.min.js', './js/materialize.min.js', './js/jquery-3.2.1.min.js', './manifest.json'],
+        externals: ['./css/materialize.min.css', './css/materialdesignicons.min.css', './fonts/roboto/Roboto-Medium.woff', './fonts/roboto/Roboto-Regular.woff', './fonts/roboto/Roboto-Light.woff', './fonts/roboto/Roboto-Thin.woff', './fonts/roboto/Roboto-Bold.woff', './fonts/roboto/Roboto-Medium.woff2', './fonts/roboto/Roboto-Regular.woff2', './fonts/roboto/Roboto-Light.woff2', './fonts/roboto/Roboto-Thin.woff2', './fonts/roboto/Roboto-Bold.woff2', './fonts/materialdesignicons-webfont.woff', './fonts/materialdesignicons-webfont.woff2', './android-chrome-192x192.png', './android-chrome-512x512.png', './favicon-32x32.png', './favicon-16x16.png', './index.html', './js/master.min.js', './js/init.min.js', './js/materialize.min.js', './js/jquery-3.2.1.min.js', './manifest.json'],
         caches: 'all',
         responseStrategy: 'cache-first',
         updateStrategy: 'changed'

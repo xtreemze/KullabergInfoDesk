@@ -1,18 +1,18 @@
 CACHE MANIFEST
-#ver:5/15/2017, 8:32:05 PM
+#ver:5/15/2017, 8:39:38 PM
 #plugin:4.7.0
 
 CACHE:
-../embedEn.html
-../embedSv.html
-../iframe.html
-../
-../img/asterisk.svg
 ../img/lansstyrelsen.svg
 ../img/regionSkane.svg
+../embedEn.html
+../embedSv.html
+../iframeEn.html
+../iframeSv.html
+../
+../img/asterisk.svg
 ../bundle.js
 ../css/materialize.min.css
-../css/master.min.css
 ../css/materialdesignicons.min.css
 ../fonts/roboto/Roboto-Medium.woff
 ../fonts/roboto/Roboto-Regular.woff

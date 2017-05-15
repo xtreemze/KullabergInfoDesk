@@ -1,7 +1,8 @@
 require('./indexB.html');
 require('./embedEnB.html');
 require('./embedSvB.html');
-require('./iframeB.html');
+require('./iframeEnB.html');
+require('./iframeSvB.html');
 require('./css/master.css');
 
 

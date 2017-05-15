@@ -16,8 +16,11 @@ module.exports = function d(env) {
         test: /embedSvB.html$/,
         loaders: ['file-loader?name=embedSv.[ext]', 'extract-loader', 'html-loader'],
       }, {
-        test: /iframeB.html$/,
-        loaders: ['file-loader?name=iframe.[ext]', 'extract-loader', 'html-loader'],
+        test: /iframeEnB.html$/,
+        loaders: ['file-loader?name=iframeEn.[ext]', 'extract-loader', 'html-loader'],
+      }, {
+        test: /iframeSvB.html$/,
+        loaders: ['file-loader?name=iframeSv.[ext]', 'extract-loader', 'html-loader'],
       }, {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],

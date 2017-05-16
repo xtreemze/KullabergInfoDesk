@@ -45,11 +45,11 @@
 -->
     <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
     <script src="js/materialize.min.js" charset="utf-8"></script>
-    <link rel="prerender" href="http://birdwave.se" crossorigin>
-    <link rel="prerender" href="http://kullabergsguiderna.se/" crossorigin>
-    <link rel="prerender" href="http://kullendyk.nu/" crossorigin>
-    <link rel="prerender" href="http://kullensfyr.se/" crossorigin>
-    <link rel="prerender" href="http://mollekajakcenter.se/" crossorigin>
+    <link rel="prefetch" href="http://birdwave.se" crossorigin="anonymous">
+    <link rel="prefetch" href="http://kullabergsguiderna.se/" crossorigin="anonymous">
+    <link rel="prefetch" href="http://kullendyk.nu/" crossorigin="anonymous">
+    <link rel="prefetch" href="http://kullensfyr.se/" crossorigin="anonymous">
+    <link rel="prefetch" href="http://mollekajakcenter.se/" crossorigin="anonymous">
 </head>
 
 <body class="blue darken-4">
@@ -71,7 +71,7 @@
     <header class="navbar z-depth-2">
         <nav class="blue darken-4" role="navigation">
             <div class="nav-wrapper">
-                <a class="brand-logo" href="embedEn.html"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Guidade Äventyr / Guided Adventures</span></a>
+                <a class="brand-logo" target="iframe1" href="iframeEn.html" onmouseup="$('#empty').modal('open'); $('#content').addClass('logoHide'); $('#out').addClass('outRight');"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Guidade Äventyr / Guided Adventures</span></a>
             </div>
         </nav>
         <!--

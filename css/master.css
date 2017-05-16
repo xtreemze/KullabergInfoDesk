@@ -1,0 +1,175 @@
+/*
+888                                         
+888                                         
+888                                         
+888      .d88b.   .d88b.   .d88b.  .d8888b  
+888     d88""88b d88P"88b d88""88b 88K      
+888     888  888 888  888 888  888 "Y8888b. 
+888     Y88..88P Y88b 888 Y88..88P      X88 
+88888888 "Y88P"   "Y88888  "Y88P"   88888P' 
+                      888                   
+                 Y8b d88P                   
+                  "Y88P"                    
+*/
+
+.over {
+    width: 2vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 6;
+    overflow: hidden;
+    left: 0;
+
+}
+
+.out {
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 6;
+    overflow: hidden;
+    right: 0;
+}
+
+.outRight {
+    transform: translateX(2000px);
+}
+
+.out:hover{
+        pointer-events: none;
+}
+
+.logoHide {
+    transform: translateX(-305px);
+}
+
+#content {
+    z-index: 1;
+    position: fixed;
+    bottom: 1vh;
+    transition: transform 800ms ease-in-out;
+    width: 330px;
+}
+
+.primary {
+    margin: 1.2vh 0;
+    height: 13vh;
+    width: 100%;
+}
+
+.imgFix {
+   position: absolute;
+   top: 50%;
+   height: 250px;
+   margin-top: -125px; /* Half the height */
+}
+
+.halfSize{
+transform: scale(.7);
+margin-top: -30px;
+}
+
+/*
+888b     d888               888          888          
+8888b   d8888               888          888          
+88888b.d88888               888          888          
+888Y88888P888  .d88b.   .d88888  8888b.  888 .d8888b  
+888 Y888P 888 d88""88b d88" 888     "88b 888 88K      
+888  Y8P  888 888  888 888  888 .d888888 888 "Y8888b. 
+888   "   888 Y88..88P Y88b 888 888  888 888      X88 
+888       888  "Y88P"   "Y88888 "Y888888 888  88888P' 
+                                                      
+                                                      
+                                                      
+*/
+
+.noModal {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    overflow: visible;
+    width: 100%;
+}
+
+.vCenter {
+    padding: 12vh 0;
+}
+
+.modal {
+    z-index: 20;
+}
+
+.mdi-48px.mdi-set,
+.mdi-48px.mdi:before {
+    font-size: 8vh;
+}
+
+
+/*
+888888b.                 888                   888    888                        888 
+888  "88b                888                   888    888                        888 
+888  .88P                888                   888    888                        888 
+8888888K.   .d88b.   .d88888 888  888          8888888888  .d88b.   8888b.   .d88888 
+888  "Y88b d88""88b d88" 888 888  888          888    888 d8P  Y8b     "88b d88" 888 
+888    888 888  888 888  888 888  888          888    888 88888888 .d888888 888  888 
+888   d88P Y88..88P Y88b 888 Y88b 888 d8b      888    888 Y8b.     888  888 Y88b 888 
+8888888P"   "Y88P"   "Y88888  "Y88888 88P      888    888  "Y8888  "Y888888  "Y88888 
+                                  888 8P                                             
+                             Y8b d88P "                                              
+                              "Y88P"                                                 
+*/
+
+
+/*body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+*/
+
+.toolbar {
+    z-index: 2000;
+}
+
+footer.page-footer {
+    line-height: 18px;
+    padding-left: 40vw;
+}
+
+.strong {
+    font-weight: 800;
+}
+
+
+/*
+██       ██████   ██████   ██████
+██      ██    ██ ██       ██    ██
+██      ██    ██ ██   ███ ██    ██
+██      ██    ██ ██    ██ ██    ██
+███████  ██████   ██████   ██████
+*/
+
+nav .brand-logo {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.logoImg {
+    -webkit-transition: transform 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-top: 0.9rem;
+    margin-right: 9px;
+    width: 32px;
+}
+
+img.logoImg:hover {
+    transform: rotate(1turn);
+}
+
+.turn {
+    transform: rotate(0.5turn);
+}

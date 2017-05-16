@@ -25,7 +25,7 @@ module.exports = function d(env) {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       }, {
-        test: /\.(png|gif|jpg)$/,
+        test: /\.(png|gif|jpg|webp)$/,
         use: ['file-loader?name=[path][name].[ext]'],
       }, {
         test: /\.(eot|ttf|woff|woff2)$/,

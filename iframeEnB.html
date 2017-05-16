@@ -62,15 +62,21 @@ Y88b  d88P 888  888 888    Y88..88P Y88b 888      X88 Y8b.     888
                                                                    
 -->
         <div class="slider fullscreen">
-            <ul class="slides">
-                <li class="red white-text" href="#one!">
-                </li>
-                <li class="amber white-text" href="#two!">
-                </li>
-                <li class="green white-text" href="#three!">
-                </li>
-                <li class="blue white-text" href="#four!">
-                </li>
+            <ul class="slides" id="slides">
+                <!--(li>img[src="img/$.jpg"][alt="Kullaberg"])*13-->
+                <li><img src="img/1.jpg" alt="Kullaberg Photo 1"></li>
+                <li><img src="img/2.jpg" alt="Kullaberg Photo 2"></li>
+                <li><img src="img/3.jpg" alt="Kullaberg Photo 3"></li>
+                <li><img src="img/4.jpg" alt="Kullaberg Photo 4"></li>
+                <li><img src="img/5.jpg" alt="Kullaberg Photo 5"></li>
+                <li><img src="img/6.jpg" alt="Kullaberg Photo 6"></li>
+                <li><img src="img/7.jpg" alt="Kullaberg Photo 7"></li>
+                <li><img src="img/8.jpg" alt="Kullaberg Photo 8"></li>
+                <li><img src="img/9.jpg" alt="Kullaberg Photo 9"></li>
+                <li><img src="img/10.jpg" alt="Kullaberg Photo 10"></li>
+                <li><img src="img/11.jpg" alt="Kullaberg Photo 11"></li>
+                <li><img src="img/12.jpg" alt="Kullaberg Photo 12"></li>
+                <li><img src="img/13.jpg" alt="Kullaberg Photo 13"></li>
             </ul>
         </div>
     </main>
@@ -88,6 +94,10 @@ Y88b  d88P Y88b.    888     888 888 d88P Y88b.       X88
                                 888                      
 -->
     <script>
+        var div2 = document.querySelector('#slides');
+        for (var i = div2.children.length; i >= 0; i--) {
+            div2.appendChild(div2.children[Math.random() * i | 0]);
+        }
         $(document)
             .ready(function() {
                 $('.slider').slider({

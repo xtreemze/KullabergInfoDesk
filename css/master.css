@@ -11,8 +11,9 @@
                  Y8b d88P                   
                   "Y88P"                    
 */
+
 .over {
-    width: 5vw;
+    width: 2vw;
     height: 100vh;
     position: fixed;
     z-index: 6;
@@ -27,8 +28,15 @@
     position: fixed;
     z-index: 6;
     overflow: hidden;
-    right:0;
+    right: 0;
+}
 
+.outRight {
+    transform: translateX(2000px);
+}
+
+.out:hover{
+        pointer-events: none;
 }
 
 .logoHide {
@@ -36,17 +44,29 @@
 }
 
 #content {
-    z-index: 5;
+    z-index: 1;
     position: fixed;
-    bottom: 0;
+    bottom: 1vh;
     transition: transform 800ms ease-in-out;
+    width: 330px;
 }
 
 .primary {
     margin: 1.2vh 0;
-    height: 12.5vh;
+    height: 13vh;
     width: 100%;
-    padding: 4.4vh 0;
+}
+
+.imgFix {
+   position: absolute;
+   top: 50%;
+   height: 250px;
+   margin-top: -125px; /* Half the height */
+}
+
+.halfSize{
+transform: scale(.7);
+margin-top: -30px;
 }
 
 /*
@@ -62,6 +82,7 @@
                                                       
                                                       
 */
+
 .noModal {
     background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
@@ -70,13 +91,12 @@
 }
 
 .vCenter {
-    padding: 15vh 0;
+    padding: 12vh 0;
 }
 
 .modal {
     z-index: 20;
 }
-
 
 .mdi-48px.mdi-set,
 .mdi-48px.mdi:before {

@@ -6,7 +6,6 @@
     <title>Kullaberg InfoDesk</title>
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=0.0, maximum-scale=10.0">
     <link rel="canonical" href="https://xtreemze.github.io/KullabergInfoDesk/embedEn.html" />
-    <meta http-equiv="refresh" content="300">
     <!--
 8888888888               8888888                          
 888                        888                            
@@ -49,8 +48,8 @@
 </head>
 
 <body class="blue darken-4">
-    <div class="over" onmouseover="$('#content').removeClass('logoHide');"> </div>
-    <div class="out" onmouseover="$('#content').addClass('logoHide');"> </div>
+    <div class="over" onmouseover="$('#content').removeClass('logoHide'); $('#out').removeClass('outRight');"> </div>
+    <div id="out" class="outRight out" onmouseover="$('#content').addClass('logoHide'); $('#out').addClass('outRight');"> </div>
     <!--
 888b    888                   
 8888b   888                   
@@ -65,7 +64,7 @@
                               
 -->
     <header class="navbar z-depth-2">
-        <nav onclick="$('#content').removeClass('logoHide');" class="blue darken-4" role="navigation">
+        <nav class="blue darken-4" role="navigation">
             <div class="nav-wrapper">
                 <a class="brand-logo" href="embedEn.html"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Guidade Äventyr / Guided Adventures</span></a>
             </div>
@@ -85,8 +84,8 @@
 
 -->
         <div class="fixed-action-btn toolbar">
-            <a class="btn-floating btn-large blue darken-4 modal-trigger" href="#empty" onclick="$('#content').addClass('logoHide');">
-                <i class="mdi mdi-information"></i>
+            <a class="btn-floating btn-large blue darken-4 modal-trigger" href="#empty">
+                <i class="mdi mdi-information mdi-36px"></i>
             </a>
             <ul>
                 <li><a class="blue darken-4 modal-trigger modal-close" href="#carlos" onclick="$('#empty').modal('close');$('#sponsors').modal('close');">App Design</a></li>
@@ -124,13 +123,13 @@
                   "Y88P"                                                                                                                                                                                                                       
 -->
         <section id="content" class="content row logoHide" onclick="$('#content').addClass('logoHide');">
-            <div class="col s4">
-                <a target="iframe1" class="btn-large waves-effect waves-light blue darken-4 primary" href="http://kullabergsguiderna.se/"><i class="mdi mdi-48px mdi-run"></i></a>
-                <a target="iframe1" class="btn-large waves-effect waves-light blue darken-4 primary"><i class="mdi mdi-48px mdi-bike"></i></a>
-                <a target="iframe1" class="btn-large waves-effect waves-light blue darken-4 primary"><i class="mdi mdi-48px mdi-apple-safari"></i></a>
-                <a target="iframe1" class="btn-large waves-effect waves-light blue darken-4 primary"><i class="mdi mdi-48px mdi-summit"></i></a>
-                <a target="iframe1" class="btn-large waves-effect waves-light blue darken-4 primary"><i class="mdi mdi-48px mdi-currency-usd"></i></a>
-                <a target="iframe1" class="btn-large waves-effect waves-light blue darken-4 primary"><i class="mdi mdi-48px mdi-fish"></i></a>
+            <div id="list1" class="col s12">
+                <a target="iframe1" class="btn-large waves-effect white primary" href="http://birdwave.se"><img class="responsive-img imgFix" src="img/birdwave.jpg" alt="Birdwave"></a>
+                <a target="iframe1" class="btn-large waves-effect white primary" href="http://kullabergsguiderna.se/"><img class="responsive-img imgFix" src="img/kullabergsguiderna.png" alt="Kullabergs Guiderna"></a>
+                <a target="iframe1" class="btn-large waves-effect waves-light primary" style="background:#181818;" href="http://kullendyk.nu/"><img class="responsive-img imgFix" src="img/kullenDyk.gif" alt="Kullens Dyk"></a>
+                <a target="iframe1" class="btn-large waves-effect white primary" href="http://kullensfyr.se/"><img class="responsive-img imgFix" src="img/kullensFyr.png" alt="Kullens Fyr"></a>
+                <a target="iframe1" class="btn-large waves-effect white darken-4 primary"href="http://mollekajakcenter.se/"><img class="responsive-img imgFix" src="img/molleKajak.webp" alt="Molle Kajak"></a>
+                <a target="iframe1" class="btn-large waves-effect waves-light blue darken-4 primary hide"><i class="mdi mdi-48px mdi-fish"></i></a>
             </div>
         </section>
         <!--
@@ -146,7 +145,7 @@ Y8P 888
                                                                        
                                                                        
 -->
-        <iframe onclick="$('#content').addClass('logoHide');" sandbox="allow-scripts allow-same-origin" id="iframe1" name="iframe1" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="iframeEn.html">
+        <iframe sandbox="allow-scripts allow-same-origin allow-forms" id="iframe1" name="iframe1" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="iframeEn.html">
 </iframe>
         <!--
 888b     d888               888          888          
@@ -161,16 +160,16 @@ Y8P 888
                                                       
                                                       
 -->
-        <div onclick="$('#content').removeClass('logoHide');" id="empty" class="modal noModal modal-close">
+        <div id="empty" class="modal noModal modal-close">
             <img src="img/guide.svg" alt="Diplom Guide" class="modal-close vCenter" />
         </div>
-        <div onclick="$('#content').removeClass('logoHide');" id="sponsors" class="modal modal-close bottom-sheet">
+        <div id="sponsors" class="modal modal-close bottom-sheet">
             <div class="modal-content row center-align">
                 <div class="col s6"> <img src="img/lansstyrelsen.svg" alt="Lansstyrelsen Skane" class="responsive-img modal-close" /> </div>
-                <div class="col s6"> <img src="img/regionSkane.svg" alt="Region Skane" class="responsive-img modal-close" /> </div>
+                <div class="col s6"> <img src="img/regionSkane.svg" alt="Region Skane" class="responsive-img halfSize modal-close" /> </div>
             </div>
         </div>
-        <div onclick="$('#content').removeClass('logoHide');" id="carlos" class="modal bottom-sheet">
+        <div id="carlos" class="modal bottom-sheet">
             <div class="modal-content row center-align modal-close">
                 <div class="col s12 modal-close">
                     <h2 class="blue-text text-darken-4">Carlos Velasco</h2>
@@ -200,12 +199,19 @@ Y8P 888
             var bodyHeight = $(window).height() - $("header").height()
             $("#iframe1").height(bodyHeight - 10).width("100%");
         };
+        var div1 = document.querySelector('#list1');
+        for (var i = div1.children.length; i >= 0; i--) {
+            div1.appendChild(div1.children[Math.random() * i | 0]);
+        }
         $(document)
             .ready(function() {
                 resizeBody();
-                $('.modal').modal({opacity: .3});
+                $('.modal').modal({
+                    opacity: .3
+                });
                 $('#empty').modal('open');
                 $('.fixed-action-btn.toolbar').openToolbar();
+
             });
         $(window).resize(function() {
             resizeBody();

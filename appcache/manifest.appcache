@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:5/16/2017, 1:05:07 PM
+#ver:5/16/2017, 2:07:00 PM
 #plugin:4.7.0
 
 CACHE:
@@ -10,29 +10,27 @@ CACHE:
 ../iframeEn.html
 ../iframeSv.html
 ../
+../fonts/materialdesignicons-webfont.eot
+../fonts/materialdesignicons-webfont.svg
+../fonts/materialdesignicons-webfont.ttf
+../fonts/materialdesignicons-webfont.woff2
+../fonts/materialdesignicons-webfont.woff
+../fonts/roboto/Roboto-Bold.woff
+../fonts/roboto/Roboto-Bold.woff2
+../fonts/roboto/Roboto-Light.woff
+../fonts/roboto/Roboto-Light.woff2
+../fonts/roboto/Roboto-Medium.woff
+../fonts/roboto/Roboto-Medium.woff2
+../fonts/roboto/Roboto-Regular.woff
+../fonts/roboto/Roboto-Regular.woff2
+../fonts/roboto/Roboto-Thin.woff
+../fonts/roboto/Roboto-Thin.woff2
 ../img/asterisk.svg
 ../bundle.js
-../css/materialize.min.css
-../css/materialdesignicons.min.css
-../fonts/roboto/Roboto-Medium.woff
-../fonts/roboto/Roboto-Regular.woff
-../fonts/roboto/Roboto-Light.woff
-../fonts/roboto/Roboto-Thin.woff
-../fonts/roboto/Roboto-Bold.woff
-../fonts/roboto/Roboto-Medium.woff2
-../fonts/roboto/Roboto-Regular.woff2
-../fonts/roboto/Roboto-Light.woff2
-../fonts/roboto/Roboto-Thin.woff2
-../fonts/roboto/Roboto-Bold.woff2
-../fonts/materialdesignicons-webfont.woff
-../fonts/materialdesignicons-webfont.woff2
 ../android-chrome-192x192.png
 ../android-chrome-512x512.png
 ../favicon-32x32.png
 ../favicon-16x16.png
-../
-../js/master.min.js
-../js/init.min.js
 ../js/materialize.min.js
 ../js/jquery-3.2.1.min.js
 ../manifest.json

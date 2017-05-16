@@ -3,7 +3,10 @@ require('./embedEnB.html');
 require('./embedSvB.html');
 require('./iframeEnB.html');
 require('./iframeSvB.html');
+require('./css/materialize.min.css');
+require('./css/materialdesignicons.min.css');
 require('./css/master.css');
+require('./js/master.js');
 
 
 // 888     888               888          888                     

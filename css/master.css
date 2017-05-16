@@ -1,11 +1,45 @@
-.content {
-    z-index: 5;
+/*
+888                                         
+888                                         
+888                                         
+888      .d88b.   .d88b.   .d88b.  .d8888b  
+888     d88""88b d88P"88b d88""88b 88K      
+888     888  888 888  888 888  888 "Y8888b. 
+888     Y88..88P Y88b 888 Y88..88P      X88 
+88888888 "Y88P"   "Y88888  "Y88P"   88888P' 
+                      888                   
+                 Y8b d88P                   
+                  "Y88P"                    
+*/
+.over {
+    width: 5vw;
+    height: 100vh;
     position: fixed;
-    bottom:0;
+    z-index: 6;
+    overflow: hidden;
+    left: 0;
+
 }
 
-.modal {
-    z-index: 20;
+.out {
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 6;
+    overflow: hidden;
+    right:0;
+
+}
+
+.logoHide {
+    transform: translateX(-305px);
+}
+
+#content {
+    z-index: 5;
+    position: fixed;
+    bottom: 0;
+    transition: transform 800ms ease-in-out;
 }
 
 .primary {
@@ -14,6 +48,35 @@
     width: 100%;
     padding: 4.4vh 0;
 }
+
+/*
+888b     d888               888          888          
+8888b   d8888               888          888          
+88888b.d88888               888          888          
+888Y88888P888  .d88b.   .d88888  8888b.  888 .d8888b  
+888 Y888P 888 d88""88b d88" 888     "88b 888 88K      
+888  Y8P  888 888  888 888  888 .d888888 888 "Y8888b. 
+888   "   888 Y88..88P Y88b 888 888  888 888      X88 
+888       888  "Y88P"   "Y88888 "Y888888 888  88888P' 
+                                                      
+                                                      
+                                                      
+*/
+.noModal {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    overflow: visible;
+    width: 100%;
+}
+
+.vCenter {
+    padding: 15vh 0;
+}
+
+.modal {
+    z-index: 20;
+}
+
 
 .mdi-48px.mdi-set,
 .mdi-48px.mdi:before {
@@ -35,6 +98,7 @@
                               "Y88P"                                                 
 */
 
+
 /*body {
     display: flex;
     min-height: 100vh;
@@ -46,9 +110,10 @@ main {
 }
 */
 
-.toolbar{
+.toolbar {
     z-index: 2000;
 }
+
 footer.page-footer {
     line-height: 18px;
     padding-left: 40vw;

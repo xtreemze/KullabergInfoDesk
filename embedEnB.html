@@ -71,7 +71,7 @@
     <header class="navbar z-depth-2">
         <nav class="blue darken-4" role="navigation">
             <div class="nav-wrapper">
-                <a class="brand-logo" target="iframe1" href="iframeEn.html" onmouseup="$('#empty').modal('open'); $('#content').addClass('logoHide'); $('#out').addClass('outRight');"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Guidade Äventyr / Guided Adventures</span></a>
+                <a class="brand-logo" target="iframe1" href="iframeEn.html" onmouseup="$('#empty').modal('open'); $('#content').addClass('logoHide'); $('#out').addClass('outRight'); randomMenu();"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Guidade Äventyr / Guided Adventures</span></a>
             </div>
         </nav>
         <!--
@@ -204,13 +204,17 @@ Y8P 888
             var bodyHeight = $(window).height() - $("header").height()
             $("#iframe1").height(bodyHeight - 10).width("100%");
         };
-        var div1 = document.querySelector('#list1');
-        for (var i = div1.children.length; i >= 0; i--) {
-            div1.appendChild(div1.children[Math.random() * i | 0]);
-        }
+        var randomMenu = function() {
+            var div1 = document.querySelector('#list1');
+            for (var i = div1.children.length; i >= 0; i--) {
+                div1.appendChild(div1.children[Math.random() * i | 0]);
+            }
+        };
+
         $(document)
             .ready(function() {
                 resizeBody();
+                randomMenu();
                 $('.modal').modal({
                     opacity: .3
                 });

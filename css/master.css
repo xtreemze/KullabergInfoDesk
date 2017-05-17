@@ -13,7 +13,7 @@
 */
 
 .over {
-    width: 2vw;
+    width: .5vw;
     height: 100vh;
     position: fixed;
     z-index: 6;

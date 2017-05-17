@@ -19,7 +19,6 @@
     z-index: 6;
     overflow: hidden;
     left: 0;
-
 }
 
 .out {
@@ -35,39 +34,43 @@
     transform: translateX(2000px);
 }
 
-.out:hover{
-        pointer-events: none;
+.out:hover {
+    pointer-events: none;
 }
 
 .logoHide {
-    transform: translateX(-305px);
+    transform: translateX(-348px);
 }
 
 #content {
     z-index: 1;
     position: fixed;
-    bottom: 1vh;
+    bottom: 4vh;
     transition: transform 800ms ease-in-out;
-    width: 330px;
+    width: 400px;
+    left: -28px;
 }
 
 .primary {
     margin: 1.2vh 0;
-    height: 13vh;
+    height: 9vh;
     width: 100%;
 }
 
 .imgFix {
-   position: absolute;
-   top: 50%;
-   height: 250px;
-   margin-top: -125px; /* Half the height */
+    position: absolute;
+    top: 59%;
+    height: 250px;
+    margin-top: -144px;
+    transform: scale(0.9);
+    margin-left: 18px;
 }
 
-.halfSize{
-transform: scale(.7);
-margin-top: -30px;
+.halfSize {
+    transform: scale(.7);
+    margin-top: -30px;
 }
+
 
 /*
 888b     d888               888          888          

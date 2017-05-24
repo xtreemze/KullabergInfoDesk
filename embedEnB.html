@@ -54,7 +54,7 @@
 </head>
 
 <body class="blue darken-4">
-            <!--
+    <!--
     888                            888 d8b                   
     888                            888 Y8P                   
     888                            888                       
@@ -67,7 +67,7 @@
                                                     Y8b d88P 
                                                     "Y88P"  
 -->
-        <div id="loading" class="loading blue darken-4"></div>
+    <div id="loading" class="loading blue darken-4"></div>
     <div class="over" onmouseover="$('#content').removeClass('logoHide'); $('#out').removeClass('outRight');"> </div>
     <div id="out" class="outRight out" onmouseover="$('#content').addClass('logoHide'); $('#out').addClass('outRight');"> </div>
     <!--
@@ -114,7 +114,6 @@
         </div>
     </header>
     <main class="blue darken-4">
-
         <!--
 888                                                                                                                                                                                                                                            
 888                                                                                                                                                                                                                                            
@@ -220,10 +219,12 @@ Y8P 888
                     opacity: .3
                 });
                 $('#empty').modal('open');
-                $('#loading').fadeOut();
             });
         $(window).resize(function() {
             resizeBody();
+        });
+        $(window).on("load", function() {
+            $('#loading').fadeOut();
         });
 
     </script>

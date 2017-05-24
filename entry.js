@@ -1,8 +1,6 @@
 require('./indexB.html');
 require('./embedEnB.html');
-require('./embedSvB.html');
 require('./iframeEnB.html');
-require('./iframeSvB.html');
 require('./css/materialize.min.css');
 require('./css/materialdesignicons.min.css');
 require('./css/master.css');

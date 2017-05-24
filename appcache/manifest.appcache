@@ -1,14 +1,10 @@
 CACHE MANIFEST
-#ver:5/17/2017, 4:43:47 PM
-#plugin:4.7.0
+#ver:5/24/2017, 6:03:40 PM
+#plugin:4.8.1
 
 CACHE:
-../img/lansstyrelsen.svg
-../img/regionSkane.svg
 ../embedEn.html
-../embedSv.html
 ../iframeEn.html
-../iframeSv.html
 ../
 ../fonts/materialdesignicons-webfont.eot
 ../fonts/materialdesignicons-webfont.svg
@@ -25,7 +21,6 @@ CACHE:
 ../fonts/roboto/Roboto-Regular.woff2
 ../fonts/roboto/Roboto-Thin.woff
 ../fonts/roboto/Roboto-Thin.woff2
-../img/asterisk.svg
 ../img/1.jpg
 ../img/10.jpg
 ../img/11.jpg
@@ -44,12 +39,15 @@ CACHE:
 ../img/7.jpg
 ../img/8.jpg
 ../img/9.jpg
+../img/asterisk.svg
 ../img/birdwave.jpg
 ../img/guide.svg
 ../img/kullabergsguiderna.png
 ../img/kullenDyk.gif
 ../img/kullensFyr.png
+../img/lansstyrelsen.svg
 ../img/molleKajak.webp
+../img/regionSkane.svg
 ../bundle.js
 ../android-chrome-192x192.png
 ../android-chrome-512x512.png

@@ -45,9 +45,24 @@ Y88b  d88P Y88b.    888     888 888 d88P Y88b.       X88
 		-->
     <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
     <script src="js/materialize.min.js" charset="utf-8"></script>
+    <script src="bundle.js"></script>
 </head>
 
 <body>
+    <!--
+    888                            888 d8b                   
+    888                            888 Y8P                   
+    888                            888                       
+    888      .d88b.   8888b.   .d88888 888 88888b.   .d88b.  
+    888     d88""88b     "88b d88" 888 888 888 "88b d88P"88b 
+    888     888  888 .d888888 888  888 888 888  888 888  888 
+    888     Y88..88P 888  888 Y88b 888 888 888  888 Y88b 888 
+    88888888 "Y88P"  "Y888888  "Y88888 888 888  888  "Y88888 
+                                                        888 
+                                                    Y8b d88P 
+                                                    "Y88P"  
+-->
+    <div id="loading" class="loading blue darken-4"></div>
     <main>
         <!--
  .d8888b.                                                      888 
@@ -98,7 +113,6 @@ Y88b  d88P Y88b.    888     888 888 d88P Y88b.       X88
                                 888                      
                                 888                      
 -->
-    <script src="bundle.js"></script>
     <script>
         var div2 = document.querySelector('#slides');
         for (var i = div2.children.length; i >= 0; i--) {
@@ -111,7 +125,7 @@ Y88b  d88P Y88b.    888     888 888 d88P Y88b.       X88
                     interval: 5000,
                     indicators: true
                 });
-
+                $('#loading').fadeOut();
             });
 
     </script>

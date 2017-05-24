@@ -16,7 +16,7 @@
     width: .5vw;
     height: 100vh;
     position: fixed;
-    z-index: 6;
+    z-index: 6000;
     overflow: hidden;
     left: 0;
 }
@@ -46,7 +46,7 @@
     z-index: 1;
     position: fixed;
     bottom: 4vh;
-    transition: transform 800ms ease-in-out;
+    transition: transform 600ms ease-in-out;
     width: 400px;
     left: -28px;
 }
@@ -198,11 +198,14 @@ img.logoImg:hover {
     position: fixed;
 }
 
-.filtered {
-    filter: blur(2px) grayscale(20%) opacity(0.9) brightness(78%) !important;
+.noFilter {
+    transition: 800ms;
 }
 
-.noFilter {
-    filter: blur(0px) grayscale(0%) opacity(1);
-    transition: 1200ms;
+.filtered {
+    filter: blur(2px) brightness(58%) grayscale(10%) opacity(1);
+}
+
+.cleared{
+    filter: blur(20px) brightness(0%) grayscale(0%) opacity(0);
 }

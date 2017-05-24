@@ -68,8 +68,8 @@
                                                     "Y88P"  
 -->
     <div id="loading" class="loading blue darken-4"></div>
-    <div class="over" onmouseover="$('#content').removeClass('logoHide'); $('#out').removeClass('outRight');"> </div>
-    <div id="out" class="outRight out" onmouseover="$('#content').addClass('logoHide'); $('#out').addClass('outRight');"> </div>
+    <div class="over" onmouseover="$('#content').removeClass('logoHide'); $('#out').removeClass('outRight'); $('#iframe1').addClass('filtered');"> </div>
+    <div id="out" class="outRight out" onmouseover="$('#content').addClass('logoHide'); $('#out').addClass('outRight'); $('#iframe1').removeClass('filtered');"> </div>
     <!--
 888b    888                   
 8888b   888                   
@@ -127,7 +127,7 @@
                  Y8b d88P                                                                                                                                                                                                                      
                   "Y88P"                                                                                                                                                                                                                       
 -->
-        <section id="content" class="content row logoHide" onclick="$('#content').addClass('logoHide');">
+        <section id="content" class="content row logoHide" onclick="$('#content').addClass('logoHide'); $('#iframe1').removeClass('filtered');">
             <div id="list1" class="col s12">
                 <a target="iframe1" class="btn-large waves-effect white primary" href="http://birdwave.se"><img class="responsive-img imgFix" src="img/birdwave.jpg" alt="Birdwave"></a>
                 <a target="iframe1" class="btn-large waves-effect white primary" href="http://kullabergsguiderna.se/"><img class="responsive-img imgFix" src="img/kullabergsguiderna.png" alt="Kullabergs Guiderna"></a>
@@ -150,7 +150,7 @@ Y8P 888
                                                                        
                                                                        
 -->
-        <iframe sandbox="allow-scripts allow-same-origin allow-forms" id="iframe1" name="iframe1" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="iframeEn.html">
+        <iframe sandbox="allow-scripts allow-same-origin allow-forms" id="iframe1" name="iframe1" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" class="noFilter" src="iframeEn.html">
 </iframe>
         <!--
 888b     d888               888          888          
@@ -219,7 +219,7 @@ Y8P 888
                     opacity: .3
                 });
                 $('#empty').modal('open');
-                 $('#loading').fadeOut();
+                $('#loading').delay(400).fadeOut(800);
             });
         $(window).resize(function() {
             resizeBody();

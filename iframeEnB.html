@@ -122,13 +122,14 @@ Y88b  d88P Y88b.    888     888 888 d88P Y88b.       X88
             .ready(function() {
                 $('.slider').slider({
                     fullWidth: true,
-                    interval: 5000,
-                    indicators: true
+                    interval: 4300,
+                    indicators: true,
+                    transition: 1200
                 });
 
             });
         $(window).on("load", function() {
-            $('#loading').fadeOut();
+            $('#loading').delay(800).fadeOut(1200);
         });
 
     </script>

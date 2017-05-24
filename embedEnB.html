@@ -219,12 +219,10 @@ Y8P 888
                     opacity: .3
                 });
                 $('#empty').modal('open');
+                 $('#loading').fadeOut();
             });
         $(window).resize(function() {
             resizeBody();
-        });
-        $(window).on("load", function() {
-            $('#loading').fadeOut();
         });
 
     </script>

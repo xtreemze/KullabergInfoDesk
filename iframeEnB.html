@@ -125,8 +125,11 @@ Y88b  d88P Y88b.    888     888 888 d88P Y88b.       X88
                     interval: 5000,
                     indicators: true
                 });
-                $('#loading').fadeOut();
+
             });
+        $(window).on("load", function() {
+            $('#loading').fadeOut();
+        });
 
     </script>
 </body>

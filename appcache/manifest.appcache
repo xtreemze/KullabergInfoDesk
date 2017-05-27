@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:5/27/2017, 4:22:12 PM
+#ver:5/27/2017, 5:24:36 PM
 #plugin:4.8.1
 
 CACHE:
@@ -21,6 +21,7 @@ CACHE:
 ../fonts/roboto/Roboto-Regular.woff2
 ../fonts/roboto/Roboto-Thin.woff
 ../fonts/roboto/Roboto-Thin.woff2
+../img/guide.svg
 ../img/1.jpg
 ../img/10.jpg
 ../img/11.jpg
@@ -41,7 +42,6 @@ CACHE:
 ../img/9.jpg
 ../img/asterisk.svg
 ../img/birdwave.jpg
-../img/guide.svg
 ../img/kullabergsguiderna.png
 ../img/kullenDyk.gif
 ../img/kullensFyr.png

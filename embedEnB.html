@@ -127,7 +127,7 @@
                  Y8b d88P                                                                                                                                                                                                                      
                   "Y88P"                                                                                                                                                                                                                       
 -->
-        <section id="content" class="content row logoHide" onclick="$('#content').addClass('logoHide'); $('#iframe1').addClass('cleared');">
+        <section id="content" class="content row logoHide" onclick="$('#content').addClass('logoHide'); $('#iframe1').addClass('cleared'); $('#loadingLogo').modal('open');">
             <div id="list1" class="col s12">
                 <a target="iframe1" class="btn-large waves-effect white primary" href="http://birdwave.se"><img class="responsive-img imgFix" src="img/birdwave.jpg" alt="Birdwave"></a>
                 <a target="iframe1" class="btn-large waves-effect white primary" href="http://kullabergsguiderna.se/"><img class="responsive-img imgFix" src="img/kullabergsguiderna.png" alt="Kullabergs Guiderna"></a>
@@ -167,6 +167,9 @@ Y8P 888
 -->
         <div id="empty" class="modal noModal modal-close" onmouseup="$('#content').removeClass('logoHide'); $('#out').removeClass('outRight');">
             <img src="img/guide.svg" alt="Diplom Guide" class="modal-close vCenter" />
+        </div>
+        <div id="loadingLogo" class="modal noModal modal-close ">
+            <img src="img/guide.svg" alt="Diplom Guide" class="modal-close vCenter" style="animation: pulse-animation 1.5s infinite;" />
         </div>
         <div id="sponsors" class="modal modal-close bottom-sheet" onmouseup="$('#content').removeClass('logoHide'); $('#out').removeClass('outRight');">
             <div class="modal-content row center-align">
@@ -227,6 +230,7 @@ Y8P 888
         });
         $("#iframe1").on("load", function() {
             $('#iframe1').removeClass('filtered cleared');
+            $('#loadingLogo').modal('close');
         });
 
     </script>

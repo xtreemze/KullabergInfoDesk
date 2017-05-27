@@ -204,9 +204,9 @@ img.logoImg:hover {
 }
 
 .filtered {
-    filter: blur(2px) brightness(58%) grayscale(10%) opacity(1);
+    filter: brightness(58%) grayscale(10%) opacity(1);
 }
 
 .cleared{
-    filter: blur(20px) brightness(0%) grayscale(0%) opacity(0);
+    filter: brightness(0%) grayscale(0%) opacity(0);
 }

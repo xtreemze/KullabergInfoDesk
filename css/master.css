@@ -200,13 +200,13 @@ img.logoImg:hover {
 
 .noFilter {
     transition: 800ms;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
 }
 
 .filtered {
     filter: brightness(58%) grayscale(10%) opacity(1);
 }
 
-.cleared{
+.cleared {
     filter: brightness(0%) grayscale(0%) opacity(0);
 }

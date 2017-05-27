@@ -200,6 +200,7 @@ img.logoImg:hover {
 
 .noFilter {
     transition: 800ms;
+    transform: translate3d(0,0,0);
 }
 
 .filtered {

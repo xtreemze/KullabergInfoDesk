@@ -127,7 +127,7 @@
                  Y8b d88P                                                                                                                                                                                                                      
                   "Y88P"                                                                                                                                                                                                                       
 -->
-        <section id="content" class="content row logoHide" onclick="$('#content').addClass('logoHide'); $('#iframe1').addClass('cleared');">
+        <section id="content" class="content row logoHide" onclick="$('#content').addClass('logoHide'); $('#iframe1').addClass('cleared'); $('#empty').modal('open');">
             <div id="list1" class="col s12">
                 <a target="iframe1" class="btn-large waves-effect white primary" href="http://birdwave.se"><img class="responsive-img imgFix" src="img/birdwave.jpg" alt="Birdwave"></a>
                 <a target="iframe1" class="btn-large waves-effect white primary" href="http://kullabergsguiderna.se/"><img class="responsive-img imgFix" src="img/kullabergsguiderna.png" alt="Kullabergs Guiderna"></a>
@@ -227,6 +227,7 @@ Y8P 888
         });
         $("#iframe1").on("load", function() {
             $('#iframe1').removeClass('filtered cleared');
+            $('#empty').modal('close');
         });
 
     </script>

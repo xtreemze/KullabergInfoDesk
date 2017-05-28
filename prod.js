@@ -4,7 +4,7 @@ const HtmlMinifierPlugin = require('html-minifier-webpack-plugin');
 const ClosureCompilerPlugin = require('webpack-closure-compiler');
 const OfflinePlugin = require('offline-plugin');
 
-module.exports = function e(env) {
+module.exports = function (env) {
   return {
     entry: './entry.js',
     output: {

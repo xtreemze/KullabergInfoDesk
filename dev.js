@@ -1,4 +1,4 @@
-module.exports = function d(env) {
+module.exports = function (env) {
   return {
     entry: './entry.js',
     output: {
@@ -44,5 +44,8 @@ module.exports = function d(env) {
         }],
       }],
     },
+    plugins: [
+
+    ]
   };
 };

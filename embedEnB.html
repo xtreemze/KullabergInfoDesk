@@ -86,7 +86,7 @@
     <header class="navbar z-depth-2">
         <nav class="blue darken-4" role="navigation">
             <div class="nav-wrapper">
-                <a class="brand-logo" target="iframe1" href="iframeEn.html" onmouseup="$('#empty').modal('open'); $('#content').addClass('logoHide'); $('#out').addClass('outRight'); randomMenu();"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Guidade Äventyr / Guided Adventures</span></a>
+                <a class="brand-logo" target="iframe1" href="iframeEn.html" onmouseup="$('#empty').modal('open'); $('#content').addClass('logoHide'); $('#out').addClass('outRight'); randomMenu();"><span class="kullaberg"><img id="logo" class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Guidade Äventyr / Guided Adventures</span></a>
             </div>
         </nav>
         <!--
@@ -169,7 +169,7 @@ Y8P 888
             <img src="img/guide.svg" alt="Diplom Guide" class="modal-close vCenter" />
         </div>
         <div id="loadingLogo" class="modal noModal modal-close ">
-            <img src="img/guide.svg" alt="Diplom Guide" class="modal-close vCenter" style="animation: pulse-animation 1.5s infinite;" />
+            <img src="img/guide.svg" alt="Diplom Guide" class="modal-close vCenter fadeInOut" />
         </div>
         <div id="sponsors" class="modal modal-close bottom-sheet" onmouseup="$('#content').removeClass('logoHide'); $('#out').removeClass('outRight');">
             <div class="modal-content row center-align">
@@ -224,6 +224,7 @@ Y8P 888
                 });
                 $('#empty').modal('open');
                 $('#loading').delay(400).fadeOut(800);
+
             });
         $(window).resize(function() {
             resizeBody();
@@ -231,6 +232,9 @@ Y8P 888
         $("#iframe1").on("load", function() {
             $('#iframe1').removeClass('filtered cleared');
             $('#loadingLogo').modal('close');
+            $('#logo').toggleClass('turn2');
+            // $('#empty').modal('close');
+            // $('#loadingLogo').modal('open');
         });
 
     </script>
